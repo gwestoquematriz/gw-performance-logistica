@@ -1,0 +1,46 @@
+{
+  "filiais": [
+    {
+      "id_wms": 12,
+      "nome_oficial": "GW Matriz",
+      "praca": "Anápolis",
+      "codigos_erp_s7": [1, 8],
+      "descricao_empresas": "1: Distribuição (GW Wireless) | 8: Telecom (Fiber Telecom)"
+    },
+    {
+      "id_wms": 9,
+      "nome_oficial": "GW Filial Goiânia",
+      "praca": "Goiânia",
+      "codigos_erp_s7": [6, 90],
+      "descricao_empresas": "6: Distribuição (GW Wireless Eireli) | 90: Telecom (Fiber Goiânia)"
+    },
+    {
+      "id_wms": 8,
+      "nome_oficial": "GW Filial Brasília",
+      "praca": "Brasília",
+      "codigos_erp_s7": [9, 91],
+      "descricao_empresas": "9: Distribuição (GW DF) | 91: Telecom (Fiber Brasília)"
+    },
+    {
+      "id_wms": 11,
+      "nome_oficial": "GW Filial Palmas",
+      "praca": "Palmas",
+      "codigos_erp_s7": [10, 11],
+      "descricao_empresas": "10: Distribuição (Palmas) | 11: Telecom (GW Wireless)"
+    },
+    {
+      "id_wms": 10,
+      "nome_oficial": "GW Filial Marabá",
+      "praca": "Marabá",
+      "codigos_erp_s7": [7, 92],
+      "descricao_empresas": "7: Distribuição (GW Wireless Filial PA) | 92: Telecom (Fiber Marabá)"
+    },
+    {
+      "id_wms": 7,
+      "nome_oficial": "GW Filial São Luís",
+      "praca": "São Luís",
+      "codigos_erp_s7": [14],
+      "descricao_empresas": "14: Distribuição / Telecom (Fiber Telecom São Luís)"
+    }
+  ]
+}

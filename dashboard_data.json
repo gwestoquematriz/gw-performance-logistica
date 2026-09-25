@@ -1,0 +1,1776 @@
+{
+  "filiais": [
+    {
+      "id": 12,
+      "nome": "GW Matriz (Lojas 1 e 8)",
+      "resumo": {
+        "totalProdutos": 1533,
+        "conciliados": 659,
+        "divergentes": 874,
+        "semEstoqueWms": 116,
+        "semEstoqueSn": 182,
+        "semDadosSn": 0,
+        "bloqueados": 0
+      },
+      "total_itens": 1533
+    },
+    {
+      "id": 9,
+      "nome": "GW Filial Goiânia (Lojas 6 e 90)",
+      "resumo": {
+        "totalProdutos": 562,
+        "conciliados": 385,
+        "divergentes": 177,
+        "semEstoqueWms": 39,
+        "semEstoqueSn": 30,
+        "semDadosSn": 0,
+        "bloqueados": 0
+      },
+      "total_itens": 562
+    },
+    {
+      "id": 8,
+      "nome": "GW Filial Brasília (Lojas 9 e 91)",
+      "resumo": {
+        "totalProdutos": 638,
+        "conciliados": 353,
+        "divergentes": 285,
+        "semEstoqueWms": 9,
+        "semEstoqueSn": 133,
+        "semDadosSn": 0,
+        "bloqueados": 0
+      },
+      "total_itens": 638
+    },
+    {
+      "id": 10,
+      "nome": "GW Filial Marabá (Lojas 7 e 92)",
+      "resumo": {
+        "totalProdutos": 412,
+        "conciliados": 22,
+        "divergentes": 390,
+        "semEstoqueWms": 389,
+        "semEstoqueSn": 0,
+        "semDadosSn": 0,
+        "bloqueados": 0
+      },
+      "total_itens": 412
+    },
+    {
+      "id": 11,
+      "nome": "GW Filial Palmas (Lojas 10 e 11)",
+      "resumo": {
+        "totalProdutos": 463,
+        "conciliados": 11,
+        "divergentes": 452,
+        "semEstoqueWms": 452,
+        "semEstoqueSn": 0,
+        "semDadosSn": 0,
+        "bloqueados": 0
+      },
+      "total_itens": 463
+    },
+    {
+      "id": 7,
+      "nome": "GW Filial São Luís (Loja 14)",
+      "resumo": {
+        "totalProdutos": 634,
+        "conciliados": 25,
+        "divergentes": 609,
+        "semEstoqueWms": 609,
+        "semEstoqueSn": 0,
+        "semDadosSn": 0,
+        "bloqueados": 0
+      },
+      "total_itens": 634
+    }
+  ],
+  "matriz_kpis": {
+    "totalProdutos": 1533,
+    "conciliados": 656,
+    "divergentes": 877,
+    "semEstoqueWms": 116,
+    "semEstoqueSn": 181,
+    "wmsMaior": 429,
+    "snMaior": 151,
+    "paresTroca": 842
+  },
+  "top_matches": [
+    {
+      "cod_falta": "17702",
+      "desc_falta": "ROTEADOR AX1500 MERCUSYS MR60X",
+      "sn_falta": 2.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 2.0,
+      "cod_sobra": "17359",
+      "desc_sobra": "ROTEADOR AX1500  MERCUSYS MR60X",
+      "wms_sobra": 6.0,
+      "sn_sobra": 4.0,
+      "sobra_qtd": 2.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 98.4,
+      "score": 99.2,
+      "enderecos": "[Galpão Matriz] R24-PA-N301 (Qtd: 6)"
+    },
+    {
+      "cod_falta": "16846",
+      "desc_falta": "CORDAO OPTICO SIMPLEX (FIBRACEM) (LC-UPC/LC-UPC) 2,5M (RI)",
+      "sn_falta": 5.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 5.0,
+      "cod_sobra": "17923",
+      "desc_sobra": "CORDAO OPTICO SIMPLEX (FIBRACEM) (LC-UPC/SC-UPC) 2,5M (RI)",
+      "wms_sobra": 15.0,
+      "sn_sobra": 10.0,
+      "sobra_qtd": 5.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 98.3,
+      "score": 99.1,
+      "enderecos": "[Galpão Matriz] R24-PD-N104 (Qtd: 15)"
+    },
+    {
+      "cod_falta": "13839",
+      "desc_falta": "CALCA NR10 ANTI-CHAMA CINZA GUARDIAN P",
+      "sn_falta": 39.0,
+      "wms_falta": 38.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "13352",
+      "desc_sobra": "CALCA NR10 ANTI-CHAMA CINZA GUARDIAN M",
+      "wms_sobra": 1.0,
+      "sn_sobra": 0.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 97.4,
+      "score": 98.7,
+      "enderecos": "[Galpão Matriz] R35-PA-N101 (Qtd: 1)"
+    },
+    {
+      "cod_falta": "13480",
+      "desc_falta": "CORDAO OPTICO SIMPLEX SC/UPC SC/UPC 1M SM",
+      "sn_falta": 478.0,
+      "wms_falta": 464.0,
+      "falta_qtd": 14.0,
+      "cod_sobra": "13299",
+      "desc_sobra": "CORDAO OPTICO SIMPLEX SC/UPC SC/APC 2,5M SM",
+      "wms_sobra": 1530.0,
+      "sn_sobra": 1517.0,
+      "sobra_qtd": 13.0,
+      "diferenca_qtd": 1.0,
+      "similaridade": 92.9,
+      "score": 95.0,
+      "enderecos": "[Galpão Matriz] R2-PC-N206 (Qtd: 1530)"
+    },
+    {
+      "cod_falta": "13480",
+      "desc_falta": "CORDAO OPTICO SIMPLEX SC/UPC SC/UPC 1M SM",
+      "sn_falta": 478.0,
+      "wms_falta": 464.0,
+      "falta_qtd": 14.0,
+      "cod_sobra": "13479",
+      "desc_sobra": "CORDAO OPTICO SIMPLEX SC/UPC SC/APC 1M SM",
+      "wms_sobra": 11.0,
+      "sn_sobra": 0.0,
+      "sobra_qtd": 11.0,
+      "diferenca_qtd": 3.0,
+      "similaridade": 97.6,
+      "score": 94.5,
+      "enderecos": "[Galpão Matriz] R24-PE-N205 (Qtd: 11)"
+    },
+    {
+      "cod_falta": "18222",
+      "desc_falta": "CABO OPTICO AS200 24FO NR-KP 2KM - WEC",
+      "sn_falta": 1.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "18221",
+      "desc_sobra": "CABO OPTICO AS200 24FO NR-KP 4KM - WEC",
+      "wms_sobra": 2.0,
+      "sn_sobra": 1.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 97.4,
+      "score": 94.4,
+      "enderecos": "[Galpão Esquina] R60-PA-N123 (Qtd: 1); [Galpão Esquina] R61-PA-N101 (Qtd: 1)"
+    },
+    {
+      "cod_falta": "55",
+      "desc_falta": "CORDAO OPTICO SIMPLEX SC/UPC LC/UPC 2 M",
+      "sn_falta": 90.0,
+      "wms_falta": 48.0,
+      "falta_qtd": 42.0,
+      "cod_sobra": "1339",
+      "desc_sobra": "CORDAO OPTICO SIMPLEX SC/UPC SC/APC 2 M",
+      "wms_sobra": 50.0,
+      "sn_sobra": 0.0,
+      "sobra_qtd": 50.0,
+      "diferenca_qtd": 8.0,
+      "similaridade": 94.9,
+      "score": 94.2,
+      "enderecos": "[PY] R52-PB-N202 (Qtd: 50)"
+    },
+    {
+      "cod_falta": "13551",
+      "desc_falta": "CABO REDE CAT5E BLINDADO COBRE (CONDUTTI) 4P 305M EXT",
+      "sn_falta": 15.0,
+      "wms_falta": 13.0,
+      "falta_qtd": 2.0,
+      "cod_sobra": "13552",
+      "desc_sobra": "CABO REDE CAT5E BLINDADO COBRE (CONDUTTI) 4P 1000M EXT",
+      "wms_sobra": 5.0,
+      "sn_sobra": 3.0,
+      "sobra_qtd": 2.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 95.3,
+      "score": 93.9,
+      "enderecos": "[Galpão Matriz] R16-PF-N111 (Qtd: 5)"
+    },
+    {
+      "cod_falta": "18342",
+      "desc_falta": "CABO OPTICO AS200-S 24FO 2KM - WEC",
+      "sn_falta": 1.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "18343",
+      "desc_sobra": "CABO OPTICO AS200-S 24FO 3KM - WEC",
+      "wms_sobra": 7.0,
+      "sn_sobra": 6.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 97.1,
+      "score": 93.5,
+      "enderecos": "[Galpão Esquina] R60-PA-N123 (Qtd: 6); [Galpão Esquina] R61-PA-N105 (Qtd: 1)"
+    },
+    {
+      "cod_falta": "18344",
+      "desc_falta": "CABO OPTICO AS200-S 24FO 4KM - WEC",
+      "sn_falta": 1.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "18343",
+      "desc_sobra": "CABO OPTICO AS200-S 24FO 3KM - WEC",
+      "wms_sobra": 7.0,
+      "sn_sobra": 6.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 97.1,
+      "score": 93.5,
+      "enderecos": "[Galpão Esquina] R60-PA-N123 (Qtd: 6); [Galpão Esquina] R61-PA-N105 (Qtd: 1)"
+    },
+    {
+      "cod_falta": "69",
+      "desc_falta": "SPLITTER 1/2 20/80 SC/UPC 0,9MM",
+      "sn_falta": 65.0,
+      "wms_falta": 63.0,
+      "falta_qtd": 2.0,
+      "cod_sobra": "61",
+      "desc_sobra": "SPLITTER 1/2 50/50 SC/UPC 0,9MM 1,5MT",
+      "wms_sobra": 110.0,
+      "sn_sobra": 108.0,
+      "sobra_qtd": 2.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 85.3,
+      "score": 92.6,
+      "enderecos": "[Galpão Matriz] R24-PE-N205 (Qtd: 98); [PY] R52-PA-N401 (Qtd: 12)"
+    },
+    {
+      "cod_falta": "18394",
+      "desc_falta": "CABO OPTICO AS80-S 24FO 4KM - LIGHTERA",
+      "sn_falta": 12.0,
+      "wms_falta": 4.0,
+      "falta_qtd": 8.0,
+      "cod_sobra": "18395",
+      "desc_sobra": "CABO OPTICO AS80-S 36FO 4KM - LIGHTERA",
+      "wms_sobra": 20.0,
+      "sn_sobra": 12.0,
+      "sobra_qtd": 8.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 94.7,
+      "score": 92.4,
+      "enderecos": "[Galpão Esquina] R61-PA-N101 (Qtd: 2); [Galpão Planalto] R90-PA-N101 (Qtd: 18)"
+    },
+    {
+      "cod_falta": "17717",
+      "desc_falta": "LUVA DE PROTECAO LP01-T8 (NAZDA) SAFETYPRO",
+      "sn_falta": 5.0,
+      "wms_falta": 3.0,
+      "falta_qtd": 2.0,
+      "cod_sobra": "17719",
+      "desc_sobra": "LUVA DE PROTECAO LP01-T10 (NAZDA) SAFETYPRO",
+      "wms_sobra": 10.0,
+      "sn_sobra": 8.0,
+      "sobra_qtd": 2.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 96.5,
+      "score": 92.2,
+      "enderecos": "[Galpão Matriz] R35-PA-N301 (Qtd: 10)"
+    },
+    {
+      "cod_falta": "13225",
+      "desc_falta": "CABO OPTICO ASU120 12FO 4KM - WEC",
+      "sn_falta": 176.0,
+      "wms_falta": 140.0,
+      "falta_qtd": 36.0,
+      "cod_sobra": "13168",
+      "desc_sobra": "CABO OPTICO ASU120 12FO 2KM - WEC",
+      "wms_sobra": 37.0,
+      "sn_sobra": 4.0,
+      "sobra_qtd": 33.0,
+      "diferenca_qtd": 3.0,
+      "similaridade": 97.0,
+      "score": 91.8,
+      "enderecos": "[Galpão Esquina] R60-PA-N115 (Qtd: 32); [Galpão Esquina] R62-PA-N115 (Qtd: 5)"
+    },
+    {
+      "cod_falta": "16767",
+      "desc_falta": "CABO OPTICO (WEC). 06FO ASU 80 (2912M)",
+      "sn_falta": 1.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "16727",
+      "desc_sobra": "CABO OPTICO (WEC) 06FO ASU 80 (1.272M)",
+      "wms_sobra": 1.0,
+      "sn_sobra": 0.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 92.1,
+      "score": 91.1,
+      "enderecos": "[Galpão AV 10] R101-PA-N101 (Qtd: 1)"
+    },
+    {
+      "cod_falta": "17713",
+      "desc_falta": "EPI BOTINA DUBAI NOBUCK MARROM PU BIDESIDADE (N-42)",
+      "sn_falta": 4.0,
+      "wms_falta": 3.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "17709",
+      "desc_sobra": "EPI BOTINA NOBUCK MARROM CAFE PU BIDESIDADE (N-42)",
+      "wms_sobra": 1.0,
+      "sn_sobra": 0.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 89.1,
+      "score": 90.3,
+      "enderecos": "[Galpão Matriz] R35-PC-N203 (Qtd: 1)"
+    },
+    {
+      "cod_falta": "13225",
+      "desc_falta": "CABO OPTICO ASU120 12FO 4KM - WEC",
+      "sn_falta": 176.0,
+      "wms_falta": 140.0,
+      "falta_qtd": 36.0,
+      "cod_sobra": "14415",
+      "desc_sobra": "CABO OPTICO ASU120 12FO 3KM - WEC",
+      "wms_sobra": 253.0,
+      "sn_sobra": 209.0,
+      "sobra_qtd": 44.0,
+      "diferenca_qtd": 8.0,
+      "similaridade": 97.0,
+      "score": 89.8,
+      "enderecos": "[Galpão Esquina] R62-PA-N109 (Qtd: 6); [Galpão Planalto] R91-PA-N101 (Qtd: 246); [Galpão AV 10] R100-PA-N101 (Qtd: 1)"
+    },
+    {
+      "cod_falta": "18271",
+      "desc_falta": "CABO OPTICO AS80 72FO 2721 M - WEC",
+      "sn_falta": 1.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "15578",
+      "desc_sobra": "CABO OPTICO AS80 72FO 3KM - WEC",
+      "wms_sobra": 8.0,
+      "sn_sobra": 7.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 89.2,
+      "score": 89.6,
+      "enderecos": "[Galpão Esquina] R60-PA-N119 (Qtd: 8)"
+    },
+    {
+      "cod_falta": "13839",
+      "desc_falta": "CALCA NR10 ANTI-CHAMA CINZA GUARDIAN P",
+      "sn_falta": 39.0,
+      "wms_falta": 38.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "13355",
+      "desc_sobra": "CAMISA NR10 ANTI-CHAMA CINZA GUARDIAN M",
+      "wms_sobra": 14.0,
+      "sn_sobra": 13.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 90.9,
+      "score": 89.5,
+      "enderecos": "[Galpão Matriz] R35-PB-N302 (Qtd: 14)"
+    },
+    {
+      "cod_falta": "14125",
+      "desc_falta": "CABO REDE CFTV (ULTRA) 4P AZUL 300M",
+      "sn_falta": 2.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 2.0,
+      "cod_sobra": "14127",
+      "desc_sobra": "CABO REDE CFTV (ULTRA) 4P BRANCO 300M",
+      "wms_sobra": 4.0,
+      "sn_sobra": 2.0,
+      "sobra_qtd": 2.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 88.9,
+      "score": 89.4,
+      "enderecos": "[Galpão Matriz] R17-PD-N307 (Qtd: 4)"
+    },
+    {
+      "cod_falta": "18344",
+      "desc_falta": "CABO OPTICO AS200-S 24FO 4KM - WEC",
+      "sn_falta": 1.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "18221",
+      "desc_sobra": "CABO OPTICO AS200 24FO NR-KP 4KM - WEC",
+      "wms_sobra": 2.0,
+      "sn_sobra": 1.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 88.9,
+      "score": 89.4,
+      "enderecos": "[Galpão Esquina] R60-PA-N123 (Qtd: 1); [Galpão Esquina] R61-PA-N101 (Qtd: 1)"
+    },
+    {
+      "cod_falta": "13839",
+      "desc_falta": "CALCA NR10 ANTI-CHAMA CINZA GUARDIAN P",
+      "sn_falta": 39.0,
+      "wms_falta": 38.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "13838",
+      "desc_sobra": "CAMISA NR10 ANTI-CHAMA CINZA GUARDIAN XG",
+      "wms_sobra": 11.0,
+      "sn_sobra": 10.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 89.7,
+      "score": 88.9,
+      "enderecos": "[Galpão Matriz] R35-PB-N302 (Qtd: 11)"
+    },
+    {
+      "cod_falta": "17209",
+      "desc_falta": "CABO OPTICO ASU80 12FO 2KM - WEC",
+      "sn_falta": 111.0,
+      "wms_falta": 70.0,
+      "falta_qtd": 41.0,
+      "cod_sobra": "13168",
+      "desc_sobra": "CABO OPTICO ASU120 12FO 2KM - WEC",
+      "wms_sobra": 37.0,
+      "sn_sobra": 4.0,
+      "sobra_qtd": 33.0,
+      "diferenca_qtd": 8.0,
+      "similaridade": 95.4,
+      "score": 88.8,
+      "enderecos": "[Galpão Esquina] R60-PA-N115 (Qtd: 32); [Galpão Esquina] R62-PA-N115 (Qtd: 5)"
+    },
+    {
+      "cod_falta": "18049",
+      "desc_falta": "MINI RACK INDOOR (FIBRACEM) EVOLUTION DESMONTAVEL 4U 19POL",
+      "sn_falta": 4.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 4.0,
+      "cod_sobra": "18056",
+      "desc_sobra": "MINI RACK INDOOR (FIBRACEM) EVOLUTION DESMONTAVEL 12U 19POL",
+      "wms_sobra": 6.0,
+      "sn_sobra": 4.0,
+      "sobra_qtd": 2.0,
+      "diferenca_qtd": 2.0,
+      "similaridade": 97.4,
+      "score": 88.7,
+      "enderecos": "[Galpão Matriz] R19-PB-N104 (Qtd: 6)"
+    },
+    {
+      "cod_falta": "12901",
+      "desc_falta": "SPLITTER 1/8  SC/UPC",
+      "sn_falta": 58.0,
+      "wms_falta": 52.0,
+      "falta_qtd": 6.0,
+      "cod_sobra": "17563",
+      "desc_sobra": "SPLITTER 1/8  SC/UPC",
+      "wms_sobra": 14.0,
+      "sn_sobra": 0.0,
+      "sobra_qtd": 14.0,
+      "diferenca_qtd": 8.0,
+      "similaridade": 100.0,
+      "score": 88.6,
+      "enderecos": "[Galpão Matriz] R24-PF-N406 (Qtd: 14)"
+    },
+    {
+      "cod_falta": "18305",
+      "desc_falta": "CABO OPTICO AS80 72FO 4KM - HT",
+      "sn_falta": 21.0,
+      "wms_falta": 20.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "15578",
+      "desc_sobra": "CABO OPTICO AS80 72FO 3KM - WEC",
+      "wms_sobra": 8.0,
+      "sn_sobra": 7.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 88.5,
+      "score": 88.3,
+      "enderecos": "[Galpão Esquina] R60-PA-N119 (Qtd: 8)"
+    },
+    {
+      "cod_falta": "12901",
+      "desc_falta": "SPLITTER 1/8  SC/UPC",
+      "sn_falta": 58.0,
+      "wms_falta": 52.0,
+      "falta_qtd": 6.0,
+      "cod_sobra": "17784",
+      "desc_sobra": "SPLITTER 1/16 SC/UPC",
+      "wms_sobra": 877.0,
+      "sn_sobra": 868.0,
+      "sobra_qtd": 9.0,
+      "diferenca_qtd": 3.0,
+      "similaridade": 90.0,
+      "score": 88.3,
+      "enderecos": "[Galpão Matriz] R2-PA-N102 (Qtd: 877)"
+    },
+    {
+      "cod_falta": "55",
+      "desc_falta": "CORDAO OPTICO SIMPLEX SC/UPC LC/UPC 2 M",
+      "sn_falta": 90.0,
+      "wms_falta": 48.0,
+      "falta_qtd": 42.0,
+      "cod_sobra": "8291",
+      "desc_sobra": "CORDAO OPTICO SIMPLEX SC/UPC SC/APC 2,5 M",
+      "wms_sobra": 1889.0,
+      "sn_sobra": 1864.0,
+      "sobra_qtd": 25.0,
+      "diferenca_qtd": 17.0,
+      "similaridade": 92.5,
+      "score": 88.2,
+      "enderecos": "[Galpão Matriz] R3-PC-N205 (Qtd: 1889)"
+    },
+    {
+      "cod_falta": "17502",
+      "desc_falta": "ROTEADOR MERCUSYS BR MW301R NAC",
+      "sn_falta": 970.0,
+      "wms_falta": 655.0,
+      "falta_qtd": 315.0,
+      "cod_sobra": "12424",
+      "desc_sobra": "ROTEADOR MERCUSYS BR MW301R",
+      "wms_sobra": 427.0,
+      "sn_sobra": 73.0,
+      "sobra_qtd": 354.0,
+      "diferenca_qtd": 39.0,
+      "similaridade": 93.1,
+      "score": 86.8,
+      "enderecos": "[Galpão Matriz] R43-PA-N101 (Qtd: 427)"
+    },
+    {
+      "cod_falta": "161",
+      "desc_falta": "CORDAO OPTICO SIMPLEX SC/UPC FC/UPC 5 M",
+      "sn_falta": 210.0,
+      "wms_falta": 82.0,
+      "falta_qtd": 128.0,
+      "cod_sobra": "12763",
+      "desc_sobra": "CORDAO OPTICO SIMPLEX LC/UPC SC/APC 2 M",
+      "wms_sobra": 84.0,
+      "sn_sobra": 9.0,
+      "sobra_qtd": 75.0,
+      "diferenca_qtd": 53.0,
+      "similaridade": 89.7,
+      "score": 86.6,
+      "enderecos": "[PY] R52-PB-N102 (Qtd: 84)"
+    },
+    {
+      "cod_falta": "18344",
+      "desc_falta": "CABO OPTICO AS200-S 24FO 4KM - WEC",
+      "sn_falta": 1.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "13801",
+      "desc_sobra": "CABO OPTICO ASU200 12FO 4KM - WEC",
+      "wms_sobra": 3.0,
+      "sn_sobra": 2.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 92.5,
+      "score": 86.3,
+      "enderecos": "[Galpão Esquina] R61-PA-N105 (Qtd: 3)"
+    },
+    {
+      "cod_falta": "69",
+      "desc_falta": "SPLITTER 1/2 20/80 SC/UPC 0,9MM",
+      "sn_falta": 65.0,
+      "wms_falta": 63.0,
+      "falta_qtd": 2.0,
+      "cod_sobra": "3594",
+      "desc_sobra": "SPLITTER 1/2 40/60 SC/UPC  0,9MM",
+      "wms_sobra": 95.0,
+      "sn_sobra": 94.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 1.0,
+      "similaridade": 92.1,
+      "score": 86.0,
+      "enderecos": "[PY] R52-PA-N401 (Qtd: 95)"
+    },
+    {
+      "cod_falta": "1336",
+      "desc_falta": "CORDAO OPTICO SIMPLEX LC/UPC LC/UPC 3 M MM",
+      "sn_falta": 32.0,
+      "wms_falta": 30.0,
+      "falta_qtd": 2.0,
+      "cod_sobra": "15577",
+      "desc_sobra": "CORDAO OPTICO SIMPLEX SC/UPC SC/APC 5M 3,0M",
+      "wms_sobra": 46.0,
+      "sn_sobra": 43.0,
+      "sobra_qtd": 3.0,
+      "diferenca_qtd": 1.0,
+      "similaridade": 84.7,
+      "score": 85.7,
+      "enderecos": "[PY] R52-PB-N402 (Qtd: 46)"
+    },
+    {
+      "cod_falta": "18344",
+      "desc_falta": "CABO OPTICO AS200-S 24FO 4KM - WEC",
+      "sn_falta": 1.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "17763",
+      "desc_sobra": "CABO OPTICO ASU200 6FO 4KM - WEC",
+      "wms_sobra": 4.0,
+      "sn_sobra": 3.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 90.9,
+      "score": 85.5,
+      "enderecos": "[Galpão Esquina] R61-PA-N105 (Qtd: 4)"
+    },
+    {
+      "cod_falta": "16993",
+      "desc_falta": "INVERSOR SENOIDAL SOLAR (EPEVER) IPOWER 1500W 220V (12VCC)",
+      "sn_falta": 4.0,
+      "wms_falta": 3.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "17486",
+      "desc_sobra": "INVERSOR SENOIDAL SOLAR (EPEVER) IPOWER1500WPLUS 220W(12VCC)",
+      "wms_sobra": 2.0,
+      "sn_sobra": 1.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 93.2,
+      "score": 85.4,
+      "enderecos": "[Galpão Matriz] R21-PB-N202 (Qtd: 2)"
+    },
+    {
+      "cod_falta": "13975",
+      "desc_falta": "GBIC 40KM 10G SFPP(DWDM-SFP10G-40) C43 MUX-DEMUX C/CISCO",
+      "sn_falta": 2.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 2.0,
+      "cod_sobra": "13976",
+      "desc_sobra": "GBIC 40KM 10G SFPP(DWDM-SFP10G-40) C44 MUX-DEMUX C/CISCO",
+      "wms_sobra": 2.0,
+      "sn_sobra": 1.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 1.0,
+      "similaridade": 98.2,
+      "score": 85.4,
+      "enderecos": "[PY] R55-PA-N401 (Qtd: 2)"
+    },
+    {
+      "cod_falta": "13480",
+      "desc_falta": "CORDAO OPTICO SIMPLEX SC/UPC SC/UPC 1M SM",
+      "sn_falta": 478.0,
+      "wms_falta": 464.0,
+      "falta_qtd": 14.0,
+      "cod_sobra": "8291",
+      "desc_sobra": "CORDAO OPTICO SIMPLEX SC/UPC SC/APC 2,5 M",
+      "wms_sobra": 1889.0,
+      "sn_sobra": 1864.0,
+      "sobra_qtd": 25.0,
+      "diferenca_qtd": 11.0,
+      "similaridade": 87.8,
+      "score": 85.1,
+      "enderecos": "[Galpão Matriz] R3-PC-N205 (Qtd: 1889)"
+    },
+    {
+      "cod_falta": "14040",
+      "desc_falta": "ALCA ANCORAGEM 16,10 / 17,1MM (10UND) VAO 120/200",
+      "sn_falta": 199.0,
+      "wms_falta": 169.0,
+      "falta_qtd": 30.0,
+      "cod_sobra": "13481",
+      "desc_sobra": "ALCA ANCORAGEM 9,40 /10,40MM (10UND) VAO 120/200",
+      "wms_sobra": 33.0,
+      "sn_sobra": 0.0,
+      "sobra_qtd": 33.0,
+      "diferenca_qtd": 3.0,
+      "similaridade": 88.7,
+      "score": 85.0,
+      "enderecos": "[Galpão Matriz] R9-PA-N201 (Qtd: 33)"
+    },
+    {
+      "cod_falta": "3611",
+      "desc_falta": "FONTE NOBREAK (VOLT) 620W (48V/10A) FULL POWER",
+      "sn_falta": 1.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "4700",
+      "desc_sobra": "FONTE NOBREAK (VOLT) 200W (24V/7A) FULL POWER",
+      "wms_sobra": 1.0,
+      "sn_sobra": 0.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 92.3,
+      "score": 84.9,
+      "enderecos": "[Galpão Matriz] R21-PB-N102 (Qtd: 1)"
+    },
+    {
+      "cod_falta": "18342",
+      "desc_falta": "CABO OPTICO AS200-S 24FO 2KM - WEC",
+      "sn_falta": 1.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "17515",
+      "desc_sobra": "CABO OPTICO ASU200 06FO 2KM - WEC",
+      "wms_sobra": 3.0,
+      "sn_sobra": 2.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 89.6,
+      "score": 84.8,
+      "enderecos": "[Galpão Esquina] R62-PA-N115 (Qtd: 3)"
+    },
+    {
+      "cod_falta": "17209",
+      "desc_falta": "CABO OPTICO ASU80 12FO 2KM - WEC",
+      "sn_falta": 111.0,
+      "wms_falta": 70.0,
+      "falta_qtd": 41.0,
+      "cod_sobra": "14415",
+      "desc_sobra": "CABO OPTICO ASU120 12FO 3KM - WEC",
+      "wms_sobra": 253.0,
+      "sn_sobra": 209.0,
+      "sobra_qtd": 44.0,
+      "diferenca_qtd": 3.0,
+      "similaridade": 92.3,
+      "score": 84.8,
+      "enderecos": "[Galpão Esquina] R62-PA-N109 (Qtd: 6); [Galpão Planalto] R91-PA-N101 (Qtd: 246); [Galpão AV 10] R100-PA-N101 (Qtd: 1)"
+    },
+    {
+      "cod_falta": "13296",
+      "desc_falta": "ADAPTADOR (SC/APC) INT. (50 PCS)",
+      "sn_falta": 13.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 13.0,
+      "cod_sobra": "13297",
+      "desc_sobra": "ADAPTADOR (SC/UPC) INT. (50 PCS)",
+      "wms_sobra": 515.0,
+      "sn_sobra": 506.0,
+      "sobra_qtd": 9.0,
+      "diferenca_qtd": 4.0,
+      "similaridade": 96.9,
+      "score": 84.8,
+      "enderecos": "[Galpão Matriz] R4-PA-N101 (Qtd: 515)"
+    },
+    {
+      "cod_falta": "16767",
+      "desc_falta": "CABO OPTICO (WEC). 06FO ASU 80 (2912M)",
+      "sn_falta": 1.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "15556",
+      "desc_sobra": "CABO OPTICO (WEC) 12FO ASU 80 (2.792M)",
+      "wms_sobra": 1.0,
+      "sn_sobra": 0.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 89.5,
+      "score": 84.7,
+      "enderecos": "[Galpão AV 10] R101-PA-N101 (Qtd: 1)"
+    },
+    {
+      "cod_falta": "17567",
+      "desc_falta": "CABO OPTICO AS120 48FO 2KM - WEC",
+      "sn_falta": 4.0,
+      "wms_falta": 1.0,
+      "falta_qtd": 3.0,
+      "cod_sobra": "13772",
+      "desc_sobra": "CABO OPTICO AS80 48FO 2KM - WEC",
+      "wms_sobra": 7.0,
+      "sn_sobra": 2.0,
+      "sobra_qtd": 5.0,
+      "diferenca_qtd": 2.0,
+      "similaridade": 95.2,
+      "score": 84.6,
+      "enderecos": "[Galpão Esquina] R60-PA-N124 (Qtd: 7)"
+    },
+    {
+      "cod_falta": "17068",
+      "desc_falta": "BATERIA ESTACIONARIA MOURA 12MN1000 (60AH)",
+      "sn_falta": 33.0,
+      "wms_falta": 27.0,
+      "falta_qtd": 6.0,
+      "cod_sobra": "4940",
+      "desc_sobra": "BATERIA ESTACIONARIA MOURA 12MN4100 ( 220AH)",
+      "wms_sobra": 30.0,
+      "sn_sobra": 24.0,
+      "sobra_qtd": 6.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 93.0,
+      "score": 84.5,
+      "enderecos": "[Galpão Esquina] R63-PA-N102 (Qtd: 30)"
+    },
+    {
+      "cod_falta": "17567",
+      "desc_falta": "CABO OPTICO AS120 48FO 2KM - WEC",
+      "sn_falta": 4.0,
+      "wms_falta": 1.0,
+      "falta_qtd": 3.0,
+      "cod_sobra": "17258",
+      "desc_sobra": "CABO OPTICO AS80 36FO 2KM - WEC",
+      "wms_sobra": 3.0,
+      "sn_sobra": 0.0,
+      "sobra_qtd": 3.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 88.9,
+      "score": 84.4,
+      "enderecos": "[Galpão Esquina] R60-PA-N124 (Qtd: 2); [Galpão Esquina] R61-PA-N105 (Qtd: 1)"
+    },
+    {
+      "cod_falta": "17573",
+      "desc_falta": "FRENTE FALSA FECHADA RACK (ELLOS) 1U 19POL PRETO",
+      "sn_falta": 5.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 5.0,
+      "cod_sobra": "16853",
+      "desc_sobra": "FRENTE FALSA FECHADA RACK (FIBRACEM) 1U 19POL PRETO",
+      "wms_sobra": 69.0,
+      "sn_sobra": 62.0,
+      "sobra_qtd": 7.0,
+      "diferenca_qtd": 2.0,
+      "similaridade": 88.9,
+      "score": 84.4,
+      "enderecos": "[Galpão Matriz] R35-PA-N201 (Qtd: 69)"
+    },
+    {
+      "cod_falta": "14040",
+      "desc_falta": "ALCA ANCORAGEM 16,10 / 17,1MM (10UND) VAO 120/200",
+      "sn_falta": 199.0,
+      "wms_falta": 169.0,
+      "falta_qtd": 30.0,
+      "cod_sobra": "13482",
+      "desc_sobra": "ALCA ANCORAGEM 11,2 /12,20MM (10UND) VAO 120/200",
+      "wms_sobra": 64.0,
+      "sn_sobra": 38.0,
+      "sobra_qtd": 26.0,
+      "diferenca_qtd": 4.0,
+      "similaridade": 88.7,
+      "score": 84.2,
+      "enderecos": "[Galpão Matriz] R10-PA-N401 (Qtd: 64)"
+    },
+    {
+      "cod_falta": "161",
+      "desc_falta": "CORDAO OPTICO SIMPLEX SC/UPC FC/UPC 5 M",
+      "sn_falta": 210.0,
+      "wms_falta": 82.0,
+      "falta_qtd": 128.0,
+      "cod_sobra": "1339",
+      "desc_sobra": "CORDAO OPTICO SIMPLEX SC/UPC SC/APC 2 M",
+      "wms_sobra": 50.0,
+      "sn_sobra": 0.0,
+      "sobra_qtd": 50.0,
+      "diferenca_qtd": 78.0,
+      "similaridade": 92.3,
+      "score": 84.0,
+      "enderecos": "[PY] R52-PB-N202 (Qtd: 50)"
+    },
+    {
+      "cod_falta": "12598",
+      "desc_falta": "RADIO (MIKROTIK) SXT SQ2ND L3 (SXTSQ LITE 2)",
+      "sn_falta": 20.0,
+      "wms_falta": 19.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "6055",
+      "desc_sobra": "RADIO (MIKROTIK) SXT SQ5ND L3 (LITE 5)",
+      "wms_sobra": 24.0,
+      "sn_sobra": 23.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 87.8,
+      "score": 83.9,
+      "enderecos": "[PY] R56-PA-N201 (Qtd: 24)"
+    },
+    {
+      "cod_falta": "3611",
+      "desc_falta": "FONTE NOBREAK (VOLT) 620W (48V/10A) FULL POWER",
+      "sn_falta": 1.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "1390",
+      "desc_sobra": "FONTE NOBREAK (VOLT) 200W (12V/8A) FULL POWER",
+      "wms_sobra": 1.0,
+      "sn_sobra": 0.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 90.1,
+      "score": 83.8,
+      "enderecos": "[Galpão Matriz] R21-PA-N401 (Qtd: 1)"
+    },
+    {
+      "cod_falta": "13296",
+      "desc_falta": "ADAPTADOR (SC/APC) INT. (50 PCS)",
+      "sn_falta": 13.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 13.0,
+      "cod_sobra": "163",
+      "desc_sobra": "ADAPTADOR (SC/APC) INT. (50 PCS)",
+      "wms_sobra": 568.0,
+      "sn_sobra": 500.0,
+      "sobra_qtd": 68.0,
+      "diferenca_qtd": 55.0,
+      "similaridade": 100.0,
+      "score": 83.8,
+      "enderecos": "[Galpão Matriz] R4-PB-N204 (Qtd: 568)"
+    },
+    {
+      "cod_falta": "16767",
+      "desc_falta": "CABO OPTICO (WEC). 06FO ASU 80 (2912M)",
+      "sn_falta": 1.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "14012",
+      "desc_sobra": "CABO OPTICO (WEC) 12FO ASU 80 (2.516M)",
+      "wms_sobra": 1.0,
+      "sn_sobra": 0.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 86.8,
+      "score": 83.4,
+      "enderecos": "[Galpão AV 10] R101-PA-N101 (Qtd: 1)"
+    },
+    {
+      "cod_falta": "18252",
+      "desc_falta": "MODULO BOX (FIBRACEM) 1X8  FTTA ADAPT FUSION PLUS SC/APC",
+      "sn_falta": 1.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "18216",
+      "desc_sobra": "MODULO BOX (FIBRACEM) 1X16  FTTA ADAPT MINI SC/APC",
+      "wms_sobra": 24.0,
+      "sn_sobra": 23.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 86.8,
+      "score": 83.4,
+      "enderecos": "[Galpão Matriz] R18-PC-N306 (Qtd: 24)"
+    },
+    {
+      "cod_falta": "17033",
+      "desc_falta": "EPI BOTINA NOBUCK PRETA (BICO PVC) N-44",
+      "sn_falta": 1.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "17029",
+      "desc_sobra": "EPI BOTINA NOBUCK PRETA (BICO PVC) N-37",
+      "wms_sobra": 10.0,
+      "sn_sobra": 8.0,
+      "sobra_qtd": 2.0,
+      "diferenca_qtd": 1.0,
+      "similaridade": 94.9,
+      "score": 83.2,
+      "enderecos": "[Galpão Matriz] R31-PA-N101 (Qtd: 10)"
+    },
+    {
+      "cod_falta": "18342",
+      "desc_falta": "CABO OPTICO AS200-S 24FO 2KM - WEC",
+      "sn_falta": 1.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "18221",
+      "desc_sobra": "CABO OPTICO AS200 24FO NR-KP 4KM - WEC",
+      "wms_sobra": 2.0,
+      "sn_sobra": 1.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 86.1,
+      "score": 83.1,
+      "enderecos": "[Galpão Esquina] R60-PA-N123 (Qtd: 1); [Galpão Esquina] R61-PA-N101 (Qtd: 1)"
+    },
+    {
+      "cod_falta": "16846",
+      "desc_falta": "CORDAO OPTICO SIMPLEX (FIBRACEM) (LC-UPC/LC-UPC) 2,5M (RI)",
+      "sn_falta": 5.0,
+      "wms_falta": 0.0,
+      "falta_qtd": 5.0,
+      "cod_sobra": "17928",
+      "desc_sobra": "CORDAO OPTICO DUPLEX (FIBRACEM) (LC-UPC/SC-APC) 2,5M (RI)",
+      "wms_sobra": 4.0,
+      "sn_sobra": 1.0,
+      "sobra_qtd": 3.0,
+      "diferenca_qtd": 2.0,
+      "similaridade": 92.2,
+      "score": 83.1,
+      "enderecos": "[Galpão Matriz] R24-PC-N203 (Qtd: 4)"
+    },
+    {
+      "cod_falta": "55",
+      "desc_falta": "CORDAO OPTICO SIMPLEX SC/UPC LC/UPC 2 M",
+      "sn_falta": 90.0,
+      "wms_falta": 48.0,
+      "falta_qtd": 42.0,
+      "cod_sobra": "1338",
+      "desc_sobra": "CORDAO OPTICO DUPLEX LC/UPC LC/UPC 2 M",
+      "wms_sobra": 56.0,
+      "sn_sobra": 0.0,
+      "sobra_qtd": 56.0,
+      "diferenca_qtd": 14.0,
+      "similaridade": 90.9,
+      "score": 83.0,
+      "enderecos": "[PY] R52-PB-N102 (Qtd: 56)"
+    },
+    {
+      "cod_falta": "13839",
+      "desc_falta": "CALCA NR10 ANTI-CHAMA CINZA GUARDIAN P",
+      "sn_falta": 39.0,
+      "wms_falta": 38.0,
+      "falta_qtd": 1.0,
+      "cod_sobra": "13353",
+      "desc_sobra": "CAMISA NR10 ANTI-CHAMA CINZA. GUARDIAN G",
+      "wms_sobra": 9.0,
+      "sn_sobra": 8.0,
+      "sobra_qtd": 1.0,
+      "diferenca_qtd": 0.0,
+      "similaridade": 89.7,
+      "score": 82.9,
+      "enderecos": "[Galpão Matriz] R35-PB-N302 (Qtd: 9)"
+    },
+    {
+      "cod_falta": "13448",
+      "desc_falta": "CABO REDE CAT5E COBRE (LANDUTTI) 4P BRANCO 305M INT",
+      "sn_falta": 17.0,
+      "wms_falta": 2.0,
+      "falta_qtd": 15.0,
+      "cod_sobra": "17179",
+      "desc_sobra": "CABO REDE CAT5E COBRE (LANDUTTI) 4P AZUL 305M INT",
+      "wms_sobra": 14.0,
+      "sn_sobra": 6.0,
+      "sobra_qtd": 8.0,
+      "diferenca_qtd": 7.0,
+      "similaridade": 92.0,
+      "score": 82.9,
+      "enderecos": "[Galpão Matriz] R17-PB-N104 (Qtd: 12); [Galpão Matriz] R17-PC-N306 (Qtd: 2)"
+    }
+  ],
+  "sem_wms": [
+    {
+      "codigo": "11282",
+      "produto": "ESTICADOR MINI (DROP) CUNHA PEQUENO",
+      "saldo_sn": 5830,
+      "disponivel_sn": 5630
+    },
+    {
+      "codigo": "18280",
+      "produto": "ONT AX3000 XX530 V2 TP LINK | PRESET LINQ",
+      "saldo_sn": 3000,
+      "disponivel_sn": 3000
+    },
+    {
+      "codigo": "17453",
+      "produto": "ARRUELA LISA METRICA 12  ZINCADO BRANCO",
+      "saldo_sn": 1870,
+      "disponivel_sn": 1870
+    },
+    {
+      "codigo": "17674",
+      "produto": "ESTICADOR DROP CUNHA MINI (RATINHO) VERDE",
+      "saldo_sn": 1725,
+      "disponivel_sn": 1675
+    },
+    {
+      "codigo": "18241",
+      "produto": "PARAFUSO P/ BAP FP",
+      "saldo_sn": 1444,
+      "disponivel_sn": 1444
+    },
+    {
+      "codigo": "12467",
+      "produto": "FERRAGEM ANEL DE DISTRIBUICAO EXTERNO (AGF-2)",
+      "saldo_sn": 1200,
+      "disponivel_sn": 1000
+    },
+    {
+      "codigo": "18281",
+      "produto": "ROTEADOR AX3000  EX521 TP LINK | PRESET LINQ",
+      "saldo_sn": 1000,
+      "disponivel_sn": 1000
+    },
+    {
+      "codigo": "18163",
+      "produto": "KIT BANDEJA CEO72 - KB72",
+      "saldo_sn": 500,
+      "disponivel_sn": 500
+    },
+    {
+      "codigo": "13952",
+      "produto": "CONECTOR RAPIDO (GFIBER-NOVO) (SC/UPC) (Q1) ROSCA (10UN)",
+      "saldo_sn": 398,
+      "disponivel_sn": 371
+    },
+    {
+      "codigo": "18161",
+      "produto": "MINI SUPORTE UNIVERSAL 3NETWORK - PRETO",
+      "saldo_sn": 200,
+      "disponivel_sn": 200
+    },
+    {
+      "codigo": "3638",
+      "produto": "SUPORTE 3/4 (RETO)",
+      "saldo_sn": 142,
+      "disponivel_sn": 142
+    },
+    {
+      "codigo": "13304",
+      "produto": "SUPORTE DIELETRICO QUADRADO SIMPLES 11/14MM",
+      "saldo_sn": 118,
+      "disponivel_sn": 118
+    },
+    {
+      "codigo": "17323",
+      "produto": "RIFA BENEFICENTE",
+      "saldo_sn": 103,
+      "disponivel_sn": 103
+    },
+    {
+      "codigo": "13864",
+      "produto": "CONECTOR RAPIDO (GFIBER) SC/UPC (10UN) CANIVETE",
+      "saldo_sn": 59,
+      "disponivel_sn": 59
+    },
+    {
+      "codigo": "4855",
+      "produto": "SUPORTE ISOLADOR  ROLDANA PADRAO",
+      "saldo_sn": 50,
+      "disponivel_sn": 50
+    },
+    {
+      "codigo": "17715",
+      "produto": "ROTEADOR AX3000 EX3320 T1 ANT. INT ZYXEL (/)",
+      "saldo_sn": 50,
+      "disponivel_sn": 50
+    },
+    {
+      "codigo": "165",
+      "produto": "CONECTOR RAPIDO (NAZDA) SC/APC (Q1) ROSCA (10UN)",
+      "saldo_sn": 199,
+      "disponivel_sn": 48
+    },
+    {
+      "codigo": "17332",
+      "produto": "ONT  AC1200 HG6145D 4GE 1POTS 1200MBPS FIBERHOME (/)",
+      "saldo_sn": 37,
+      "disponivel_sn": 37
+    },
+    {
+      "codigo": "12603",
+      "produto": "CABO DROP 1FO (TRANSCEND) FLAT 150 METROS",
+      "saldo_sn": 36,
+      "disponivel_sn": 36
+    },
+    {
+      "codigo": "2535",
+      "produto": "BATERIA SELADA MOURA 12V/7A",
+      "saldo_sn": 29,
+      "disponivel_sn": 29
+    },
+    {
+      "codigo": "18095",
+      "produto": "FONTE (UBIQUITI) POE 48 30W U-POE-AT-BR 802.3AT",
+      "saldo_sn": 27,
+      "disponivel_sn": 26
+    },
+    {
+      "codigo": "17137",
+      "produto": "CORDAO OPTICO(E2000 APC/SC UPC)2M (SINGLE MODE)SX 3.0MM LSZH",
+      "saldo_sn": 27,
+      "disponivel_sn": 25
+    },
+    {
+      "codigo": "4729",
+      "produto": "Z. USADO AIR GRID (RECON)",
+      "saldo_sn": 22,
+      "disponivel_sn": 22
+    },
+    {
+      "codigo": "18005",
+      "produto": "ROTEADOR AX3000  EX520 TP LINK",
+      "saldo_sn": 21,
+      "disponivel_sn": 20
+    },
+    {
+      "codigo": "12984",
+      "produto": "ESTICADOR DROP TIPO CUNHA AZUL CLARO",
+      "saldo_sn": 19,
+      "disponivel_sn": 19
+    },
+    {
+      "codigo": "17328",
+      "produto": "CTO 1X16 VERMELHA",
+      "saldo_sn": 17,
+      "disponivel_sn": 17
+    },
+    {
+      "codigo": "4851",
+      "produto": "BATERIA ESTACIONARIA MOURA 12MN300 (30AH)",
+      "saldo_sn": 13,
+      "disponivel_sn": 13
+    },
+    {
+      "codigo": "13296",
+      "produto": "ADAPTADOR (SC/APC) INT. (50 PCS)",
+      "saldo_sn": 13,
+      "disponivel_sn": 13
+    },
+    {
+      "codigo": "13986",
+      "produto": "SWITCH (2FLEX) POE REVERSO PLUS GIGA 8P (12V/48V) (VLAN)",
+      "saldo_sn": 13,
+      "disponivel_sn": 11
+    },
+    {
+      "codigo": "4902",
+      "produto": "PATCH PANEL FAST (VOLT) 10 PORTAS POE EVOLUTION 12 A 56V",
+      "saldo_sn": 10,
+      "disponivel_sn": 10
+    },
+    {
+      "codigo": "13052",
+      "produto": "SUPORTE MONITOR DUPLO ARTICULADO 10 A 27 POLEGADAS",
+      "saldo_sn": 10,
+      "disponivel_sn": 10
+    },
+    {
+      "codigo": "18465",
+      "produto": "MOUSE PAD GAMER EXTRA GRANDE PRETO",
+      "saldo_sn": 10,
+      "disponivel_sn": 10
+    },
+    {
+      "codigo": "3637",
+      "produto": "SUPORTE 3/4 (CAVALETE)",
+      "saldo_sn": 9,
+      "disponivel_sn": 9
+    },
+    {
+      "codigo": "16852",
+      "produto": "D.I.O CRISTAL 24FO SC/APC (FIBRACEM)",
+      "saldo_sn": 9,
+      "disponivel_sn": 9
+    },
+    {
+      "codigo": "18018",
+      "produto": "OLT GPON (C-DATA) FD1608S-B1-PSA0 8 PON 2X10GB UPLINK",
+      "saldo_sn": 9,
+      "disponivel_sn": 9
+    },
+    {
+      "codigo": "17618",
+      "produto": "CORDOALHA DIELETRICA 6,4MM (VAOS 80/200) 1000MTS",
+      "saldo_sn": 9,
+      "disponivel_sn": 8
+    },
+    {
+      "codigo": "17648",
+      "produto": "ONT  AC1200 EG8145V5 V2 1POTS 4GE 1USB HUAWEI",
+      "saldo_sn": 8,
+      "disponivel_sn": 8
+    },
+    {
+      "codigo": "13019",
+      "produto": "SAPATA ESQUERDA (SINTESE) P/ ESCADA",
+      "saldo_sn": 7,
+      "disponivel_sn": 6
+    },
+    {
+      "codigo": "14120",
+      "produto": "SAPATILHA PARA CABO DE ACO 3/8",
+      "saldo_sn": 6,
+      "disponivel_sn": 6
+    },
+    {
+      "codigo": "18100",
+      "produto": "BATERIA DE LITIO (FIBERVIX) ZC-L 48100 48V DC",
+      "saldo_sn": 7,
+      "disponivel_sn": 6
+    },
+    {
+      "codigo": "12788",
+      "produto": "CORDOALHA DIELETRICA 6,4MM ( ATE VAO 80M) 500MTS",
+      "saldo_sn": 5,
+      "disponivel_sn": 5
+    },
+    {
+      "codigo": "16846",
+      "produto": "CORDAO OPTICO SIMPLEX (FIBRACEM) (LC-UPC/LC-UPC) 2,5M (RI)",
+      "saldo_sn": 5,
+      "disponivel_sn": 5
+    },
+    {
+      "codigo": "17397",
+      "produto": "ALCA  9,60 A 10,40MM (10UN) - VERMELHA - (HL) 670 MM ALUM 5V",
+      "saldo_sn": 11,
+      "disponivel_sn": 5
+    },
+    {
+      "codigo": "17573",
+      "produto": "FRENTE FALSA FECHADA RACK (ELLOS) 1U 19POL PRETO",
+      "saldo_sn": 5,
+      "disponivel_sn": 5
+    },
+    {
+      "codigo": "18250",
+      "produto": "CABO DE REDE (LANDUTTI) CAT6(GIGABIT) 4P LSZH-3 (305M)",
+      "saldo_sn": 5,
+      "disponivel_sn": 5
+    },
+    {
+      "codigo": "13391",
+      "produto": "ESTICADOR DROP CUNHA  QUADRADO (LARANJA)",
+      "saldo_sn": 4,
+      "disponivel_sn": 4
+    },
+    {
+      "codigo": "17300",
+      "produto": "ONT AX1800 XX230V TP LINK",
+      "saldo_sn": 4,
+      "disponivel_sn": 4
+    },
+    {
+      "codigo": "17503",
+      "produto": "ALCA  6,80 A  7,40MM (10UN)  BRANCO 600MM - (TGL) ACO 3V",
+      "saldo_sn": 71,
+      "disponivel_sn": 4
+    },
+    {
+      "codigo": "17542",
+      "produto": "MAQUINA FUSAO (FUJIKURA) MOD. 42S (COM CLIVADOR CT-50)",
+      "saldo_sn": 4,
+      "disponivel_sn": 4
+    },
+    {
+      "codigo": "17621",
+      "produto": "SWITCH (TP LINK BR) (TL SG 3452P)  JETSTREAM GIGA (/)",
+      "saldo_sn": 4,
+      "disponivel_sn": 4
+    }
+  ],
+  "sem_sn": [
+    {
+      "codigo": "17707",
+      "produto": "ESTICADOR FIO (DROP) FIG8 (AZUL CLARO)",
+      "saldo_wms": 3600,
+      "enderecos": [
+        "[Galpão Matriz] R12-PA-N102 (Qtd: 3600)"
+      ]
+    },
+    {
+      "codigo": "17114",
+      "produto": "PARAFUSO OLHAL REDONDO 12X300MM",
+      "saldo_wms": 1796,
+      "enderecos": [
+        "[Galpão Esquina] R60-PC-N205 (Qtd: 1796)"
+      ]
+    },
+    {
+      "codigo": "17423",
+      "produto": "CAMISA NR10 ANTI-CHAMA GUARDIAN P ( PERSON)",
+      "saldo_wms": 1777,
+      "enderecos": [
+        "[Galpão Matriz] R14-PA-N102 (Qtd: 1777)"
+      ]
+    },
+    {
+      "codigo": "16884",
+      "produto": "CABO OPTICO (WEC) 12FO ASU 80 (687M) ",
+      "saldo_wms": 1392,
+      "enderecos": [
+        "[PY] R57-PF-N106 (Qtd: 1392)"
+      ]
+    },
+    {
+      "codigo": "12383",
+      "produto": "ALCA PRE FORM 1,00 / 1,60MM (10UND) DROP",
+      "saldo_wms": 1270,
+      "enderecos": [
+        "[Galpão Matriz] R11-PC-N205 (Qtd: 1270)"
+      ]
+    },
+    {
+      "codigo": "18451",
+      "produto": "CABO DROP 1FO 1KM COLADO - WEC - AZUL",
+      "saldo_wms": 1080,
+      "enderecos": [
+        "[Galpão Drop] R72-PA-N104 (Qtd: 315)",
+        "[Galpão Drop] R72-PA-N103 (Qtd: 90)",
+        "[Galpão Drop] R71-PA-N101 (Qtd: 585)",
+        "[Galpão Drop] R70-PA-N124 (Qtd: 90)"
+      ]
+    },
+    {
+      "codigo": "17522",
+      "produto": "ESTICADOR FIO (DROP) FIG8 (AZUL)",
+      "saldo_wms": 818,
+      "enderecos": [
+        "[Galpão Matriz] R15-PG-N113 (Qtd: 818)"
+      ]
+    },
+    {
+      "codigo": "18335",
+      "produto": "ALCA  1,30/ 1,50MM (10UND) DROP ACO 2V",
+      "saldo_wms": 780,
+      "enderecos": [
+        "[Galpão Matriz] R8-PB-N104 (Qtd: 780)"
+      ]
+    },
+    {
+      "codigo": "17289",
+      "produto": "ROTEADOR AC1200 EC220 G5 TP LINK",
+      "saldo_wms": 628,
+      "enderecos": [
+        "[Galpão Matriz] R41-PA-N101 (Qtd: 626)",
+        "[Galpão Matriz] R43-PA-N101 (Qtd: 2)"
+      ]
+    },
+    {
+      "codigo": "18110",
+      "produto": "CTO 16FO (NEXUS) VAZIA PRETA 2TRAVA",
+      "saldo_wms": 536,
+      "enderecos": [
+        "[Galpão Matriz] R15-PE-N309 (Qtd: 58)",
+        "[Galpão Matriz] R13-PC-N106 (Qtd: 7)",
+        "[Galpão Matriz] R15-PD-N308 (Qtd: 283)",
+        "[Galpão Matriz] R15-PE-N310 (Qtd: 40)",
+        "[Galpão Matriz] R14-PD-N307 (Qtd: 148)"
+      ]
+    },
+    {
+      "codigo": "8274",
+      "produto": "PARAFUSO P/ ROLDANA PR 60 GALV NZ",
+      "saldo_wms": 500,
+      "enderecos": [
+        "[Galpão Matriz] R19-PA-N202 (Qtd: 500)"
+      ]
+    },
+    {
+      "codigo": "18406",
+      "produto": "CTO 1X8 (SHORELINE) PLUS MONTADA SC/ACP - PRETA",
+      "saldo_wms": 438,
+      "enderecos": [
+        "[Galpão Matriz] R12-PA-N201 (Qtd: 38)",
+        "[Galpão Matriz] R11-PA-N402 (Qtd: 200)",
+        "[Galpão Matriz] R11-PB-N403 (Qtd: 200)"
+      ]
+    },
+    {
+      "codigo": "17524",
+      "produto": "ESTICADOR FIO (DROP) FIG8 PRETO",
+      "saldo_wms": 300,
+      "enderecos": [
+        "[Galpão Matriz] R14-PA-N102 (Qtd: 300)"
+      ]
+    },
+    {
+      "codigo": "18009",
+      "produto": "ONU FD511G X F660 1GE BRIDGE CDATA",
+      "saldo_wms": 214,
+      "enderecos": [
+        "[Galpão Matriz] R18-PB-N303 (Qtd: 214)"
+      ]
+    },
+    {
+      "codigo": "13476",
+      "produto": "ONU PHYHOME FHR 2100GZB 1GE BRIDGE/ROUTER",
+      "saldo_wms": 201,
+      "enderecos": [
+        "[Galpão Matriz] R3-PA-N201 (Qtd: 201)"
+      ]
+    },
+    {
+      "codigo": "18166",
+      "produto": "CTO 1X16  P/ SPLITTER BOX (NEX)",
+      "saldo_wms": 187,
+      "enderecos": [
+        "[Galpão Matriz] R14-PD-N207 (Qtd: 184)",
+        "[Galpão Matriz] R14-PD-N208 (Qtd: 3)"
+      ]
+    },
+    {
+      "codigo": "18201",
+      "produto": "SPLITTER 1/2 BALANCEADO 40/60 (SH) SC/APC",
+      "saldo_wms": 172,
+      "enderecos": [
+        "[Galpão Matriz] R3-PB-N204 (Qtd: 172)"
+      ]
+    },
+    {
+      "codigo": "12733",
+      "produto": "ONU 5506/01A BRANCA BRIDGE MINI FIBERHOME",
+      "saldo_wms": 160,
+      "enderecos": [
+        "[PY] R57-PE-N105 (Qtd: 160)"
+      ]
+    },
+    {
+      "codigo": "18296",
+      "produto": "CTO FTTH (THINK) VAZIA - VERMELHO",
+      "saldo_wms": 130,
+      "enderecos": [
+        "[Galpão Matriz] R12-PA-N302 (Qtd: 50)",
+        "[Galpão Matriz] R13-PC-N306 (Qtd: 80)"
+      ]
+    },
+    {
+      "codigo": "15614",
+      "produto": "FERRAGEM ISOLADOR DE PLASTICO (72X72) PRESSBOW",
+      "saldo_wms": 100,
+      "enderecos": [
+        "[Galpão Matriz] R19-PB-N104 (Qtd: 100)"
+      ]
+    },
+    {
+      "codigo": "17172",
+      "produto": "GABINETE TERMOPLASTICO SPLITTER 1/8 (SC/APC) SHT",
+      "saldo_wms": 96,
+      "enderecos": [
+        "[Galpão Matriz] R1-PB-N303 (Qtd: 96)"
+      ]
+    },
+    {
+      "codigo": "13298",
+      "produto": "CORDAO OPTICO SIMPLEX SC/APC SC/APC 2,5M SM ",
+      "saldo_wms": 86,
+      "enderecos": [
+        "[Galpão Matriz] R24-PE-N205 (Qtd: 86)"
+      ]
+    },
+    {
+      "codigo": "17346",
+      "produto": "FONTE POE 24V/1A ",
+      "saldo_wms": 83,
+      "enderecos": [
+        "[Galpão Matriz] R25-PC-N103 (Qtd: 83)"
+      ]
+    },
+    {
+      "codigo": "17399",
+      "produto": "ALCA PRE FORM (HL) 0,90 A 1,10MM (10UND) DROP VERDE",
+      "saldo_wms": 80,
+      "enderecos": [
+        "[Galpão Matriz] R8-PA-N202 (Qtd: 80)"
+      ]
+    },
+    {
+      "codigo": "13478",
+      "produto": "CORDAO OPTICO SIMPLEX SC/APC SC/APC 1M SM",
+      "saldo_wms": 79,
+      "enderecos": [
+        "[Galpão Matriz] R24-PC-N303 (Qtd: 79)"
+      ]
+    },
+    {
+      "codigo": "17624",
+      "produto": "ROTEADOR AX3000 EX3320 T0 ZYXEL",
+      "saldo_wms": 72,
+      "enderecos": [
+        "[Galpão Matriz] R43-PA-N101 (Qtd: 72)"
+      ]
+    },
+    {
+      "codigo": "18112",
+      "produto": "CTO 16FO (NEXUS) COMPLETA APC PRETA 2TRAVA - 1/16 APC",
+      "saldo_wms": 70,
+      "enderecos": [
+        "[Galpão Matriz] R18-PD-N408 (Qtd: 70)"
+      ]
+    },
+    {
+      "codigo": "64",
+      "produto": "SPLITTER 1/2 50/50 SC/APC 0,9MM 1,5MT ",
+      "saldo_wms": 70,
+      "enderecos": [
+        "[PY] R52-PA-N401 (Qtd: 70)"
+      ]
+    },
+    {
+      "codigo": "18312",
+      "produto": "SPLITTER 1/2 50/50 (SHL) DESC",
+      "saldo_wms": 62,
+      "enderecos": [
+        "[Galpão Matriz] R24-PE-N405 (Qtd: 62)"
+      ]
+    },
+    {
+      "codigo": "1338",
+      "produto": "CORDAO OPTICO DUPLEX LC/UPC LC/UPC 2 M",
+      "saldo_wms": 56,
+      "enderecos": [
+        "[PY] R52-PB-N102 (Qtd: 56)"
+      ]
+    },
+    {
+      "codigo": "18106",
+      "produto": "BANDEJA PARA CAIXA DE EMENDA OPTICA (FIBRACEM)",
+      "saldo_wms": 52,
+      "enderecos": [
+        "[Galpão Matriz] R19-PC-N206 (Qtd: 52)"
+      ]
+    },
+    {
+      "codigo": "1339",
+      "produto": "CORDAO OPTICO SIMPLEX SC/UPC SC/APC 2 M",
+      "saldo_wms": 50,
+      "enderecos": [
+        "[PY] R52-PB-N202 (Qtd: 50)"
+      ]
+    },
+    {
+      "codigo": "17996",
+      "produto": "ALCA ANCORAGEM (TGL) 6,00 A 6,50MM (10UN)  BRANCA ",
+      "saldo_wms": 50,
+      "enderecos": [
+        "[Galpão Matriz] R10-PB-N104 (Qtd: 50)"
+      ]
+    },
+    {
+      "codigo": "7230",
+      "produto": "SPLITTER 1/2 05/95 SC/APC  0,9MM 1.5MT",
+      "saldo_wms": 46,
+      "enderecos": [
+        "[PY] R52-PB-N302 (Qtd: 46)"
+      ]
+    },
+    {
+      "codigo": "18092",
+      "produto": "CONECTOR RAPIDO (REDEX) (SC/APC) CLICK (10UN)",
+      "saldo_wms": 41,
+      "enderecos": [
+        "[Galpão Matriz] R5-PB-N204 (Qtd: 41)"
+      ]
+    },
+    {
+      "codigo": "12884",
+      "produto": "ROTEADOR TP LINK BR 840W PROVEDOR 300MBPS",
+      "saldo_wms": 40,
+      "enderecos": [
+        "[Galpão Matriz] R3-PB-N203 (Qtd: 40)"
+      ]
+    },
+    {
+      "codigo": "12932",
+      "produto": "CONECTOR RAPIDO (NAZDA) (SC/APC) (Q4) CLICK (10UN)",
+      "saldo_wms": 38,
+      "enderecos": [
+        "[Galpão Matriz] R5-PB-N204 (Qtd: 38)"
+      ]
+    },
+    {
+      "codigo": "13979",
+      "produto": "ONU XZ000 G3 1 PORT GIGABIT TERMINAL TP LINK",
+      "saldo_wms": 38,
+      "enderecos": [
+        "[Galpão Matriz] R24-PA-N101 (Qtd: 38)"
+      ]
+    },
+    {
+      "codigo": "17458",
+      "produto": "ONT AC1200 GFIBER HG325AX 4GE 1POTS USB3.0",
+      "saldo_wms": 35,
+      "enderecos": [
+        "[Galpão Matriz] R2-PC-N205 (Qtd: 35)"
+      ]
+    },
+    {
+      "codigo": "13481",
+      "produto": "ALCA ANCORAGEM 9,40 /10,40MM (10UND) VAO 120/200",
+      "saldo_wms": 33,
+      "enderecos": [
+        "[Galpão Matriz] R9-PA-N201 (Qtd: 33)"
+      ]
+    },
+    {
+      "codigo": "18390",
+      "produto": "CONECTOR RAPIDO (2FLEX) (SC/UPC) CLICK 3 POSICOES (10 UN.)",
+      "saldo_wms": 30,
+      "enderecos": [
+        "[Galpão Matriz] R5-PB-N203 (Qtd: 30)"
+      ]
+    },
+    {
+      "codigo": "17461",
+      "produto": "ESTICADOR DROP (TGL) TIPO CUNHA FTTH PRETO",
+      "saldo_wms": 30,
+      "enderecos": [
+        "[Galpão Matriz] R12-PA-N101 (Qtd: 30)"
+      ]
+    },
+    {
+      "codigo": "18065",
+      "produto": "FRENTE FALSA FECHADA (FIBRACEM) 4U 19POL",
+      "saldo_wms": 30,
+      "enderecos": [
+        "[PY] R51-PA-N401 (Qtd: 30)"
+      ]
+    },
+    {
+      "codigo": "18115",
+      "produto": "CAIXA EMENDA 24FO (SUMAY) MINI SM-CFOC24",
+      "saldo_wms": 24,
+      "enderecos": [
+        "[Galpão Matriz] R19-PD-N407 (Qtd: 24)"
+      ]
+    },
+    {
+      "codigo": "13477",
+      "produto": "SUPORTE ANCORAGEM SUSPENSAO (SAS)",
+      "saldo_wms": 23,
+      "enderecos": [
+        "[Galpão Matriz] R19-PD-N107 (Qtd: 23)"
+      ]
+    },
+    {
+      "codigo": "13547",
+      "produto": "ONU CIANET HR01 ROUTER 1GE",
+      "saldo_wms": 22,
+      "enderecos": [
+        "[Galpão Matriz] R24-PA-N101 (Qtd: 22)"
+      ]
+    },
+    {
+      "codigo": "4782",
+      "produto": "ROTEADOR (TP LINK) TL WR940N  ANTENA FIXA (450MBPS)",
+      "saldo_wms": 21,
+      "enderecos": [
+        "[Galpão Matriz] R25-PC-N303 (Qtd: 21)"
+      ]
+    },
+    {
+      "codigo": "14030",
+      "produto": "CORDAO OPTICO SINGLE LC/UPC SC/APC DUPLEX  3 M",
+      "saldo_wms": 20,
+      "enderecos": [
+        "[PY] R52-PA-N101 (Qtd: 20)"
+      ]
+    },
+    {
+      "codigo": "18137",
+      "produto": "DROP 1FO 1KM  - TRANSCEND",
+      "saldo_wms": 20,
+      "enderecos": [
+        "[Galpão Drop] R70-PA-N123 (Qtd: 20)"
+      ]
+    },
+    {
+      "codigo": "17431",
+      "produto": "FITA VELCRO (ADCONNECT) ORGANIZADORA CABO 20MM - 3M PRETA",
+      "saldo_wms": 20,
+      "enderecos": [
+        "[Galpão Matriz] R30-PA-N101 (Qtd: 20)"
+      ]
+    }
+  ]
+}
