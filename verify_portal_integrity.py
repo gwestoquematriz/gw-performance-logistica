@@ -20,20 +20,28 @@ except Exception as e:
 expected_ids = [
     'view-hub', 'view-performance', 'view-acuracidade', 'view-transporte',
     'btn-acur-sem-giro', 'acur-sem-giro', 'kpi-parado-valor', 'kpi-parado-skus',
-    'search-parado', 'filter-parado-aging', 'sort-parado', 'tbody-estoque-parado',
-    'section-action-plan'
+    'search-parado', 'btn-period-90', 'btn-period-all', 'input-custom-days',
+    'input-custom-date', 'sort-parado', 'tbody-estoque-parado', 'section-action-plan'
 ]
 print("\nChecking expected IDs in HTML:")
+all_ok = True
 for eid in expected_ids:
     found = f'id="{eid}"' in html
     print(f"  {eid}: {'FOUND' if found else 'MISSING'}")
+    if not found:
+        all_ok = False
 
 # 3. Check functions
 expected_funcs = [
     'renderEstoqueParado', 'renderTableEstoqueParado', 'getFilteredEstoqueParadoList',
+    'setParadoPeriod', 'setCustomDays', 'setCustomDate',
     'exportEstoqueParadoExcel', 'switchAcuracidadeTab', 'applyAcuracidadeFilters'
 ]
 print("\nChecking expected functions in HTML:")
 for fn in expected_funcs:
     found = f'function {fn}' in html
     print(f"  {fn}: {'FOUND' if found else 'MISSING'}")
+    if not found:
+        all_ok = False
+
+print("\nINTEGRITY STATUS:", "ALL CHECKS PASSED!" if all_ok else "ERRORS FOUND!")
