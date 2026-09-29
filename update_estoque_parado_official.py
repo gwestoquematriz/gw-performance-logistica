@@ -1,12 +1,14 @@
 """
-Atualizador Oficial de Custos e Aging de Estoque Parado
+Atualizador Oficial de Custos, Aging e Safra de Entrada (SN) de Estoque Parado
 GW Wireless - Performance Operacional Logístico
-Aplica os custos oficiais das planilhas:
-  - GW Empresa 01.xls
-  - Fiber Empresa 08.xls
-Para todas as lojas da rede (Matriz, Goiânia, Brasília, Palmas, Marabá, São Luís).
-Recalcula o capital imobilizado real (saldo_fisico * custo_unitario_oficial)
-e atualiza o portal Dashboard_Performance_Operacional_Logistico.html e o artefato.
+Aplica:
+  1. Custos oficiais das planilhas: GW Empresa 01.xls e Fiber Empresa 08.xls para todas as lojas.
+  2. Histórico real de vendas (Relatorios.VW_Logistica_Detalhada).
+  3. Histórico de movimentações de entrada no ERP S7 (dbo.VW_GW_Movimentacao_Estoque):
+     - Data da 1ª entrada registrada no SN
+     - Data da última entrada registrada no SN
+     - Identificação e cálculo de entradas em 2026 vs entradas até 2025 (ou Legado pré-2025).
+Permite desconsiderar tudo o que teve entrada no ano de 2026 e focar no saldo com entrada até 2025.
 """
 
 import os
@@ -43,7 +45,7 @@ def format_tempo_parado(dias):
         return f"{dias} dias"
 
 def build_costs_map():
-    print("Carregando planilhas oficiais de custos...")
+    print("1. Carregando planilhas oficiais de custos S7...")
     df_gw = pd.read_excel('c:/Users/renan.alves/.gemini/Projetos/Bancos/GW Empresa 01.xls')
     df_fiber = pd.read_excel('c:/Users/renan.alves/.gemini/Projetos/Bancos/Fiber Empresa 08.xls')
 
@@ -85,7 +87,13 @@ def get_official_cost(sku, desc, costs_map):
     # Fallback inteligente baseado em médias de categorias S7 para os 96 SKUs não cadastrados na Matriz/Fiber
     d = (desc or '').upper()
     un = 'UN'
-    if 'CABO OPTICO' in d and any(k in d for k in ['ASU', 'AS80', 'AS120', '2KM', '3KM', '4KM']):
+    if '16884' in sku_str:
+        cost = 1.25  # Cabo ASU80 fracionado em metros
+        un = 'M'
+    elif '18451' in sku_str:
+        cost = 0.30  # Cabo Drop fracionado em metros
+        un = 'M'
+    elif 'CABO OPTICO' in d and any(k in d for k in ['ASU', 'AS80', 'AS120', '2KM', '3KM', '4KM']):
         cost = 3500.00
     elif 'DROP' in d and ('1KM' in d or 'COLADO' in d):
         cost = 300.00
@@ -105,7 +113,7 @@ def get_official_cost(sku, desc, costs_map):
 def main():
     costs_map = build_costs_map()
 
-    print("Buscando histórico real de vendas no MSSQL S7...")
+    print("\n2. Buscando histórico de vendas e entradas no MSSQL S7...")
     s7_conn = pymssql.connect(
         server=os.getenv('DB_S7_HOST'), port=int(os.getenv('DB_S7_PORT', 1433)),
         user=os.getenv('DB_S7_USER'), password=os.getenv('DB_S7_PASSWORD'),
@@ -113,7 +121,8 @@ def main():
     )
     s7_cur = s7_conn.cursor()
 
-    query = """
+    # VENDAS
+    query_vendas = """
         SELECT 
             CODPRODUTO,
             CODEMP,
@@ -124,16 +133,14 @@ def main():
         WHERE OPERACAO = 'SAIDA_BALCAO'
         GROUP BY CODPRODUTO, CODEMP;
     """
-    s7_cur.execute(query)
-    s7_rows = s7_cur.fetchall()
-    print(f"Registros de vendas extraídos do S7: {len(s7_rows)}")
-    s7_cur.close()
-    s7_conn.close()
+    s7_cur.execute(query_vendas)
+    s7_sales = s7_cur.fetchall()
+    print(f"Registros de vendas extraídos do S7: {len(s7_sales)}")
 
     sales_by_filial = {}
     sales_by_network = {}
 
-    for r in s7_rows:
+    for r in s7_sales:
         cod_prod = str(r[0]).strip()
         cod_emp = r[1]
         dt_venda = r[2]
@@ -154,8 +161,51 @@ def main():
         else:
             sales_by_network[cod_prod]['count'] += qtd
 
-    # Carregar inventário auditado
-    print("Cruzando com inventário físico de todas as 6 lojas...")
+    # ENTRADAS (MOVIMENTAÇÃO DE ESTOQUE)
+    print("Extraindo movimentações de entrada (VW_GW_Movimentacao_Estoque)...")
+    query_entradas = """
+        SELECT 
+            COD_PRODUTO, COD_EMPRESA,
+            MIN(CONVERT(date, DATA_HORA_MOVIMENTACAO, 103)) as DT_PRI,
+            MAX(CONVERT(date, DATA_HORA_MOVIMENTACAO, 103)) as DT_ULT,
+            SUM(CASE WHEN YEAR(CONVERT(date, DATA_HORA_MOVIMENTACAO, 103)) <= 2025 THEN QUANTIDADE_MOVIMENTADA ELSE 0 END) as QTD_2025,
+            SUM(CASE WHEN YEAR(CONVERT(date, DATA_HORA_MOVIMENTACAO, 103)) = 2026 THEN QUANTIDADE_MOVIMENTADA ELSE 0 END) as QTD_2026,
+            COUNT(CASE WHEN YEAR(CONVERT(date, DATA_HORA_MOVIMENTACAO, 103)) = 2026 THEN 1 END) as CNT_2026,
+            COUNT(CASE WHEN YEAR(CONVERT(date, DATA_HORA_MOVIMENTACAO, 103)) <= 2025 THEN 1 END) as CNT_2025
+        FROM dbo.VW_GW_Movimentacao_Estoque
+        WHERE OPERACAO LIKE 'ENTRADA%'
+        GROUP BY COD_PRODUTO, COD_EMPRESA;
+    """
+    s7_cur.execute(query_entradas)
+    s7_entries = s7_cur.fetchall()
+    print(f"Registros de entrada por filial extraídos: {len(s7_entries)}")
+    s7_cur.close()
+    s7_conn.close()
+
+    entries_by_sku_filial = {}
+    for r in s7_entries:
+        sku = str(r[0]).strip()
+        emp = r[1]
+        fid = ERP_TO_FILIAL.get(emp)
+        if not fid:
+            continue
+        key = (sku, fid)
+        if key not in entries_by_sku_filial:
+            entries_by_sku_filial[key] = {
+                'dt_pri': r[2], 'dt_ult': r[3],
+                'q25': r[4] or 0, 'q26': r[5] or 0,
+                'c26': r[6] or 0, 'c25': r[7] or 0
+            }
+        else:
+            entries_by_sku_filial[key]['dt_pri'] = min(entries_by_sku_filial[key]['dt_pri'], r[2])
+            entries_by_sku_filial[key]['dt_ult'] = max(entries_by_sku_filial[key]['dt_ult'], r[3])
+            entries_by_sku_filial[key]['q25'] += (r[4] or 0)
+            entries_by_sku_filial[key]['q26'] += (r[5] or 0)
+            entries_by_sku_filial[key]['c26'] += (r[6] or 0)
+            entries_by_sku_filial[key]['c25'] += (r[7] or 0)
+
+    # 3. Cruzar com inventário auditado das 6 lojas
+    print("\n3. Cruzando inventário auditado com custos, vendas e safra de entradas...")
     with open('c:/Users/renan.alves/.gemini/Projetos/Bancos/dashboard_full_data.json', 'r', encoding='utf-8') as f:
         full_stock = json.load(f)
 
@@ -189,7 +239,11 @@ def main():
             'semestre': 0,
             'trimestre': 0,
             'mes': 0,
-            'recente': 0
+            'recente': 0,
+            # Indicadores de Safra (Sem entrada 2026)
+            'skus_sem_entrada_2026': 0,
+            'unidades_sem_entrada_2026': 0,
+            'valor_sem_entrada_2026': 0.0
         }
 
         for it in itens:
@@ -198,7 +252,7 @@ def main():
             saldo_sn = float(it.get('sn', 0) or 0)
             saldo_wms = float(it.get('wms', 0) or 0)
             
-            # Referência oficial solicitada: Estoque SN; se 0, avalia WMS
+            # Referência oficial: Estoque SN; se 0, avalia WMS
             saldo_fisico = saldo_sn if saldo_sn > 0 else (saldo_wms if saldo_wms > 0 else 0)
             
             # REGRA FUNDAMENTAL: Apenas itens com saldo positivo (> 0)
@@ -228,7 +282,7 @@ def main():
                 else:
                     status_venda = "Sem Registro de Venda no Sistema"
 
-            # Buscar CUSTO OFICIAL DAS PLANILHAS EXCEL PARA TODAS AS LOJAS
+            # CUSTO OFICIAL DAS PLANILHAS EXCEL PARA TODAS AS LOJAS
             valor_unit, unidade_prod, fonte_custo = get_official_cost(cod_sku, desc, costs_map)
             valor_total = round(saldo_fisico * valor_unit, 2)
             resumo_filiais[str(fid)]['valor_imobilizado'] += valor_total
@@ -251,6 +305,40 @@ def main():
             else:
                 resumo_filiais[str(fid)]['recente'] += 1
 
+            # SAFRA DE ENTRADAS NO ERP S7
+            ent_info = entries_by_sku_filial.get((cod_sku, fid))
+            if ent_info:
+                dt_pri_ent = ent_info['dt_pri']
+                dt_ult_ent = ent_info['dt_ult']
+                teve_entrada_2026 = (ent_info['c26'] > 0)
+                qtd_entrada_2026 = ent_info['q26']
+                qtd_entrada_2025 = ent_info['q25']
+                
+                pe_str = dt_pri_ent.strftime('%d/%m/%Y')
+                pe_iso = dt_pri_ent.strftime('%Y-%m-%d')
+                ue_str = dt_ult_ent.strftime('%d/%m/%Y')
+                ue_iso = dt_ult_ent.strftime('%Y-%m-%d')
+                
+                if teve_entrada_2026:
+                    safra_status = f"Entrada em 2026 (+{qtd_entrada_2026:,.0f} un)"
+                else:
+                    safra_status = "Entrada até 2025 (Sem entrada em 2026)"
+            else:
+                # Saldo físico legado já constava antes de 2025 e não teve novas entradas registradas na filial
+                teve_entrada_2026 = False
+                qtd_entrada_2026 = 0
+                qtd_entrada_2025 = 0
+                pe_str = "Legado <= 2024"
+                pe_iso = "2024-12-31"
+                ue_str = "Legado <= 2024"
+                ue_iso = "2024-12-31"
+                safra_status = "Legado <= 2024 (Saldo sem entrada 2025/2026)"
+
+            if not teve_entrada_2026:
+                resumo_filiais[str(fid)]['skus_sem_entrada_2026'] += 1
+                resumo_filiais[str(fid)]['unidades_sem_entrada_2026'] += saldo_fisico
+                resumo_filiais[str(fid)]['valor_sem_entrada_2026'] += valor_total
+
             processed_items.append({
                 'c': cod_sku,
                 'l': fid,
@@ -268,7 +356,16 @@ def main():
                 'vu': valor_unit,
                 'vt': valor_total,
                 'st': status_venda,
-                'src': fonte_custo
+                'src': fonte_custo,
+                # SAFRA DE ENTRADAS NO ERP S7:
+                'pe': pe_str,
+                'pei': pe_iso,
+                'ue': ue_str,
+                'uei': ue_iso,
+                'e26': teve_entrada_2026,
+                'q26': qtd_entrada_2026,
+                'q25': qtd_entrada_2025,
+                'safra': safra_status
             })
 
     # Ordenação padrão: data de venda mais antiga no topo (mais crítico primeiro)
@@ -277,6 +374,10 @@ def main():
     # Round dos valores no resumo
     for k in resumo_filiais:
         resumo_filiais[k]['valor_imobilizado'] = round(resumo_filiais[k]['valor_imobilizado'], 2)
+        resumo_filiais[k]['valor_sem_entrada_2026'] = round(resumo_filiais[k]['valor_sem_entrada_2026'], 2)
+
+    total_sem_2026 = [it for it in processed_items if not it['e26']]
+    total_com_2026 = [it for it in processed_items if it['e26']]
 
     payload = {
         'data_extracao': today.strftime("%d/%m/%Y"),
@@ -284,6 +385,7 @@ def main():
         'fonte_custos': 'Planilhas Oficiais S7: GW Empresa 01.xls e Fiber Empresa 08.xls (Aplicado a todas as lojas)',
         'cobertura_custos_oficiais': f"{matched_count} de {matched_count + unmatched_count} itens ({matched_count/(matched_count+unmatched_count)*100:.1f}%)",
         'kpis_gerais': {
+            # Acervo Completo
             'total_skus_com_saldo': len(processed_items),
             'valor_total_imobilizado': round(sum(it['vt'] for it in processed_items), 2),
             'saldo_total_unidades': sum(it['sf'] for it in processed_items),
@@ -292,7 +394,16 @@ def main():
             'total_semestre': sum(1 for it in processed_items if 180 <= it['dias'] < 365),
             'total_trimestre': sum(1 for it in processed_items if 90 <= it['dias'] < 180),
             'total_mes': sum(1 for it in processed_items if 30 <= it['dias'] < 90),
-            'total_recente': sum(1 for it in processed_items if it['dias'] < 30)
+            'total_recente': sum(1 for it in processed_items if it['dias'] < 30),
+            # Safra: Desconsiderando Entradas em 2026 (Saldo formado até 2025 / Legado)
+            'total_sem_entrada_2026': len(total_sem_2026),
+            'valor_sem_entrada_2026': round(sum(it['vt'] for it in total_sem_2026), 2),
+            'unidades_sem_entrada_2026': sum(it['sf'] for it in total_sem_2026),
+            'sem_venda_sem_entrada_2026': sum(1 for it in total_sem_2026 if it['dias'] >= 999),
+            'mais_1ano_sem_entrada_2026': sum(1 for it in total_sem_2026 if 365 <= it['dias'] < 999),
+            # Safra: Com Entradas em 2026
+            'total_com_entrada_2026': len(total_com_2026),
+            'valor_com_entrada_2026': round(sum(it['vt'] for it in total_com_2026), 2)
         },
         'resumo_por_filial': resumo_filiais,
         'itens': processed_items
@@ -304,42 +415,17 @@ def main():
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
     print(f"\nSalvo com sucesso {output_file} ({len(processed_items)} registros).")
-    print(f"Cobertura dos custos oficiais das planilhas: {matched_count}/{matched_count + unmatched_count} ({matched_count/(matched_count+unmatched_count)*100:.1f}%)")
-
-    # Atualizar o portal HTML
-    html_path = 'c:/Users/renan.alves/.gemini/Projetos/Bancos/Dashboard_Performance_Operacional_Logistico.html'
-    print(f"\nAtualizando const DATA em {html_path}...")
-    with open(html_path, 'r', encoding='utf-8') as f:
-        html = f.read()
-
-    start_data = html.find('const DATA = ') + len('const DATA = ')
-    end_data = html.find(';\n', start_data)
-
-    data_json = json.loads(html[start_data:end_data])
-    data_json['estoque_parado'] = payload
-    new_data_str = json.dumps(data_json, ensure_ascii=False)
-
-    html = html[:start_data] + new_data_str + html[end_data:]
-
-    with open(html_path, 'w', encoding='utf-8') as f:
-        f.write(html)
-
-    print("Portal HTML atualizado com sucesso!")
-
-    # Atualizar artefato
-    artifact_path = r'C:\Users\renan.alves\.gemini\antigravity\brain\43bb33b6-6367-463c-94d9-1306168eb162\dashboard_performance_operacional_logistico.html'
-    shutil.copyfile(html_path, artifact_path)
-    print(f"Artefato sincronizado em: {artifact_path}")
+    print(f"SKUs sem entrada em 2026 (Safra <= 2025): {len(total_sem_2026)} SKUs | R$ {sum(it['vt'] for it in total_sem_2026):,.2f}")
 
     # Exibir resumo por filial
-    print("\n" + "=" * 80)
-    print(f"{'Filial':<20} | {'SKUs':<6} | {'Unidades':<12} | {'Capital Imobilizado Real (R$)':<30}")
-    print("-" * 80)
+    print("\n" + "=" * 90)
+    print(f"{'Filial':<16} | {'SKUs Total':<10} | {'Sem Entrada 2026':<18} | {'Capital Total':<16} | {'Capital <= 2025':<16}")
+    print("-" * 90)
     for fid, res in resumo_filiais.items():
-        print(f"{res['nome_curto']:<20} | {res['total_com_saldo']:<6} | {res['saldo_total_unidades']:<12,.0f} | R$ {res['valor_imobilizado']:<27,.2f}")
-    print("-" * 80)
-    print(f"{'TOTAL REDE':<20} | {payload['kpis_gerais']['total_skus_com_saldo']:<6} | {payload['kpis_gerais']['saldo_total_unidades']:<12,.0f} | R$ {payload['kpis_gerais']['valor_total_imobilizado']:<27,.2f}")
-    print("=" * 80)
+        print(f"{res['nome_curto']:<16} | {res['total_com_saldo']:<10} | {res['skus_sem_entrada_2026']:<18} | R$ {res['valor_imobilizado']:<13,.2f} | R$ {res['valor_sem_entrada_2026']:<13,.2f}")
+    print("-" * 90)
+    print(f"{'TOTAL REDE':<16} | {payload['kpis_gerais']['total_skus_com_saldo']:<10} | {payload['kpis_gerais']['total_sem_entrada_2026']:<18} | R$ {payload['kpis_gerais']['valor_total_imobilizado']:<13,.2f} | R$ {payload['kpis_gerais']['valor_sem_entrada_2026']:<13,.2f}")
+    print("=" * 90)
 
 if __name__ == '__main__':
     main()
