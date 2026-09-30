@@ -1,0 +1,1622 @@
+{
+  "637210": {
+    "s7": [
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "14/08/2026",
+        "cliente": "INFINITY GO TELECOMUNICACOES LTDA",
+        "vendedor": "BEATRIZ JESUS",
+        "cod_produto": 17491,
+        "produto": "FONTE ( MAX AMPER ) 12VDC 2A ",
+        "qtd": 10.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "14/08/2026",
+        "cliente": "INFINITY GO TELECOMUNICACOES LTDA",
+        "vendedor": "BEATRIZ JESUS",
+        "cod_produto": 18306,
+        "produto": "SPLITTER 1/2 SC/APC",
+        "qtd": 30.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "14/08/2026",
+        "cliente": "INFINITY GO TELECOMUNICACOES LTDA",
+        "vendedor": "BEATRIZ JESUS",
+        "cod_produto": 165,
+        "produto": "CONECTOR RAPIDO (NAZDA) SC/APC (Q1) ROSCA (10UN)",
+        "qtd": 300.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "14/08/2026",
+        "cliente": "INFINITY GO TELECOMUNICACOES LTDA",
+        "vendedor": "BEATRIZ JESUS",
+        "cod_produto": 17716,
+        "produto": "ONU V-SOL 2801SG PRETA",
+        "qtd": 500.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      }
+    ],
+    "wms": [],
+    "mov": [
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "14/08/2026 00:00:00",
+        "cod_produto": 17491,
+        "produto": "FONTE ( MAX AMPER ) 12VDC 2A ",
+        "qtd": 10,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14737"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "14/08/2026 00:00:00",
+        "cod_produto": 18306,
+        "produto": "SPLITTER 1/2 SC/APC",
+        "qtd": 30,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14737"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "14/08/2026 00:00:00",
+        "cod_produto": 165,
+        "produto": "CONECTOR RAPIDO (NAZDA) SC/APC (Q1) ROSCA (10UN)",
+        "qtd": 300,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14737"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "14/08/2026 00:00:00",
+        "cod_produto": 17716,
+        "produto": "ONU V-SOL 2801SG PRETA",
+        "qtd": 500,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14737"
+      }
+    ]
+  },
+  "624850": {
+    "s7": [
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "21/05/2026",
+        "cliente": "MIX TELECOM LTDA",
+        "vendedor": "BEATRIZ JESUS",
+        "cod_produto": 17630,
+        "produto": "ROTEADOR AX1800 EX220V2  NOVO TP LINK",
+        "qtd": 150.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "21/05/2026",
+        "cliente": "MIX TELECOM LTDA",
+        "vendedor": "BEATRIZ JESUS",
+        "cod_produto": 17302,
+        "produto": "CAIXA TERMINACAO (2PT) MINI PTO (ROSETA) 4TRAVA",
+        "qtd": 100.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "21/05/2026",
+        "cliente": "MIX TELECOM LTDA",
+        "vendedor": "BEATRIZ JESUS",
+        "cod_produto": 18334,
+        "produto": "ALCA  1,00 / 1,60MM (10UND) DROP ACO 1V",
+        "qtd": 20.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "21/05/2026",
+        "cliente": "MIX TELECOM LTDA",
+        "vendedor": "BEATRIZ JESUS",
+        "cod_produto": 12733,
+        "produto": "ONU 5506/01A BRANCA BRIDGE MINI FIBERHOME",
+        "qtd": 90.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      }
+    ],
+    "wms": [
+      {
+        "cliente": "MIX TELECOM LTDA",
+        "vendedor": "BEATRIZ JESUS",
+        "dt_sep": "2026-05-21 20:40:25",
+        "cod_produto": "17302",
+        "produto": "CAIXA TERMINACAO (2PT) MINI PTO (ROSETA) 4TRAVA",
+        "qtd_ped": 100,
+        "qtd_ent": 100,
+        "qtd_pend": 0,
+        "status": "Separado Parc."
+      },
+      {
+        "cliente": "MIX TELECOM LTDA",
+        "vendedor": "BEATRIZ JESUS",
+        "dt_sep": "2026-05-21 20:40:25",
+        "cod_produto": "17630",
+        "produto": "ROTEADOR AX1800 EX220V2  NOVO TP LINK",
+        "qtd_ped": 150,
+        "qtd_ent": 150,
+        "qtd_pend": 0,
+        "status": "Separado Parc."
+      },
+      {
+        "cliente": "MIX TELECOM LTDA",
+        "vendedor": "BEATRIZ JESUS",
+        "dt_sep": "2026-05-21 20:40:25",
+        "cod_produto": "18334",
+        "produto": "ALCA  1,00 / 1,60MM (10UND) DROP ACO 1V",
+        "qtd_ped": 20,
+        "qtd_ent": 20,
+        "qtd_pend": 0,
+        "status": "Separado Parc."
+      }
+    ],
+    "mov": [
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "21/05/2026 00:00:00",
+        "cod_produto": 17630,
+        "produto": "ROTEADOR AX1800 EX220V2  NOVO TP LINK",
+        "qtd": 150,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "93691"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "21/05/2026 00:00:00",
+        "cod_produto": 17302,
+        "produto": "CAIXA TERMINACAO (2PT) MINI PTO (ROSETA) 4TRAVA",
+        "qtd": 100,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "93691"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "21/05/2026 00:00:00",
+        "cod_produto": 18334,
+        "produto": "ALCA  1,00 / 1,60MM (10UND) DROP ACO 1V",
+        "qtd": 20,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "93691"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "21/05/2026 00:00:00",
+        "cod_produto": 12733,
+        "produto": "ONU 5506/01A BRANCA BRIDGE MINI FIBERHOME",
+        "qtd": 90,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "93691"
+      }
+    ]
+  },
+  "619871": {
+    "s7": [
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "14/04/2026",
+        "cliente": "FORESTNET COMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 18136,
+        "produto": "DETECTOR DE FALHA (ORIENTEK) TFL-Q 10MW",
+        "qtd": 3.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "14/04/2026",
+        "cliente": "FORESTNET COMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 17895,
+        "produto": "CAIXA EMENDA OPTICA (FIBRACEM) 24FO (AER/SUBT)",
+        "qtd": 30.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "14/04/2026",
+        "cliente": "FORESTNET COMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 17906,
+        "produto": "CAIXA EMENDA FIBRACEM 12FO SVT (POCKET)",
+        "qtd": 2.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "14/04/2026",
+        "cliente": "FORESTNET COMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 18186,
+        "produto": "SPLITTER 1/16 (SHL) SC/APC ",
+        "qtd": 80.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "14/04/2026",
+        "cliente": "FORESTNET COMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 163,
+        "produto": "ADAPTADOR (SC/APC) INT. (50 PCS)  ",
+        "qtd": 16.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "14/04/2026",
+        "cliente": "FORESTNET COMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 14111,
+        "produto": "CABO OPTICO ASU80 12FO 3KM - WEC",
+        "qtd": 2.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "14/04/2026",
+        "cliente": "FORESTNET COMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 17204,
+        "produto": "CABO OPTICO ASU80 06FO 3KM - WEC",
+        "qtd": 6.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      }
+    ],
+    "wms": [
+      {
+        "cliente": "FORESTNET COMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "dt_sep": "2026-04-20 18:28:46",
+        "cod_produto": "163",
+        "produto": "ADAPTADOR (SC/APC) INT. (50 PCS)  ",
+        "qtd_ped": 16,
+        "qtd_ent": 16,
+        "qtd_pend": 0,
+        "status": "Separado Parc."
+      },
+      {
+        "cliente": "FORESTNET COMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "dt_sep": "2026-04-20 18:28:46",
+        "cod_produto": "17895",
+        "produto": "CAIXA EMENDA OPTICA (FIBRACEM) 24FO (AER/SUBT)",
+        "qtd_ped": 30,
+        "qtd_ent": 30,
+        "qtd_pend": 0,
+        "status": "Separado Parc."
+      },
+      {
+        "cliente": "FORESTNET COMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "dt_sep": "2026-04-20 18:28:46",
+        "cod_produto": "18186",
+        "produto": "SPLITTER 1/16 (SHL) SC/APC ",
+        "qtd_ped": 80,
+        "qtd_ent": 80,
+        "qtd_pend": 0,
+        "status": "Separado Parc."
+      }
+    ],
+    "mov": [
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "14/04/2026 00:00:00",
+        "cod_produto": 18136,
+        "produto": "DETECTOR DE FALHA (ORIENTEK) TFL-Q 10MW",
+        "qtd": 3,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14189"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "14/04/2026 00:00:00",
+        "cod_produto": 17895,
+        "produto": "CAIXA EMENDA OPTICA (FIBRACEM) 24FO (AER/SUBT)",
+        "qtd": 30,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14189"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "14/04/2026 00:00:00",
+        "cod_produto": 17906,
+        "produto": "CAIXA EMENDA FIBRACEM 12FO SVT (POCKET)",
+        "qtd": 2,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14189"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "14/04/2026 00:00:00",
+        "cod_produto": 18186,
+        "produto": "SPLITTER 1/16 (SHL) SC/APC ",
+        "qtd": 80,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14189"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "14/04/2026 00:00:00",
+        "cod_produto": 163,
+        "produto": "ADAPTADOR (SC/APC) INT. (50 PCS)  ",
+        "qtd": 16,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14189"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "14/04/2026 00:00:00",
+        "cod_produto": 14111,
+        "produto": "CABO OPTICO ASU80 12FO 3KM - WEC",
+        "qtd": 2,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14189"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "14/04/2026 00:00:00",
+        "cod_produto": 17204,
+        "produto": "CABO OPTICO ASU80 06FO 3KM - WEC",
+        "qtd": 6,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14189"
+      }
+    ]
+  },
+  "615696": {
+    "s7": [
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "17/03/2026",
+        "cliente": "INFINITY GO TELECOMUNICACOES LTDA",
+        "vendedor": "BEATRIZ JESUS",
+        "cod_produto": 18005,
+        "produto": "ROTEADOR AX3000  EX520 TP LINK",
+        "qtd": 500.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "17/03/2026",
+        "cliente": "INFINITY GO TELECOMUNICACOES LTDA",
+        "vendedor": "BEATRIZ JESUS",
+        "cod_produto": 18009,
+        "produto": "ONU FD511G X F660 1GE BRIDGE CDATA",
+        "qtd": 376.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      }
+    ],
+    "wms": [
+      {
+        "cliente": "INFINITY GO TELECOMUNICACOES LTDA",
+        "vendedor": "BEATRIZ JESUS",
+        "dt_sep": "2026-03-27 19:38:31",
+        "cod_produto": "18009",
+        "produto": "ONU FD511G X F660 1GE BRIDGE CDATA",
+        "qtd_ped": 376,
+        "qtd_ent": 252,
+        "qtd_pend": 124,
+        "status": "Separado Parc."
+      },
+      {
+        "cliente": "INFINITY GO TELECOMUNICACOES LTDA",
+        "vendedor": "BEATRIZ JESUS",
+        "dt_sep": "2026-03-27 19:38:31",
+        "cod_produto": "18005",
+        "produto": "ROTEADOR AX3000  EX520 TP LINK",
+        "qtd_ped": 500,
+        "qtd_ent": 500,
+        "qtd_pend": 0,
+        "status": "Separado Parc."
+      }
+    ],
+    "mov": [
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "17/03/2026 00:00:00",
+        "cod_produto": 18005,
+        "produto": "ROTEADOR AX3000  EX520 TP LINK",
+        "qtd": 500,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14061"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "17/03/2026 00:00:00",
+        "cod_produto": 18009,
+        "produto": "ONU FD511G X F660 1GE BRIDGE CDATA",
+        "qtd": 376,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14061"
+      }
+    ]
+  },
+  "633388": {
+    "s7": [
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "21/07/2026",
+        "cliente": "LINQ TELECOMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 17783,
+        "produto": "SPLITTER 1/8  SC/UPC ",
+        "qtd": 200.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "21/07/2026",
+        "cliente": "LINQ TELECOMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 18186,
+        "produto": "SPLITTER 1/16 (SHL) SC/APC ",
+        "qtd": 100.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "21/07/2026",
+        "cliente": "LINQ TELECOMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 17784,
+        "produto": "SPLITTER 1/16 SC/UPC (/)",
+        "qtd": 300.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "21/07/2026",
+        "cliente": "LINQ TELECOMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 18391,
+        "produto": "SPLITTER 1/8 SC/APC SHORT LEG BLISTER 2 UN.",
+        "qtd": 150.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      }
+    ],
+    "wms": [],
+    "mov": [
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "21/07/2026 00:00:00",
+        "cod_produto": 17783,
+        "produto": "SPLITTER 1/8  SC/UPC ",
+        "qtd": 200,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14618"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "21/07/2026 00:00:00",
+        "cod_produto": 18186,
+        "produto": "SPLITTER 1/16 (SHL) SC/APC ",
+        "qtd": 100,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14618"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "21/07/2026 00:00:00",
+        "cod_produto": 17784,
+        "produto": "SPLITTER 1/16 SC/UPC (/)",
+        "qtd": 300,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14618"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "21/07/2026 00:00:00",
+        "cod_produto": 18391,
+        "produto": "SPLITTER 1/8 SC/APC SHORT LEG BLISTER 2 UN.",
+        "qtd": 150,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14618"
+      }
+    ]
+  },
+  "626019": {
+    "s7": [
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "28/05/2026",
+        "cliente": "LINQ TELECOMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 17784,
+        "produto": "SPLITTER 1/16 SC/UPC (/)",
+        "qtd": 200.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "28/05/2026",
+        "cliente": "LINQ TELECOMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 18186,
+        "produto": "SPLITTER 1/16 (SHL) SC/APC ",
+        "qtd": 50.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "28/05/2026",
+        "cliente": "LINQ TELECOMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 17783,
+        "produto": "SPLITTER 1/8  SC/UPC ",
+        "qtd": 100.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "28/05/2026",
+        "cliente": "LINQ TELECOMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 18391,
+        "produto": "SPLITTER 1/8 SC/APC SHORT LEG BLISTER 2 UN.",
+        "qtd": 150.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "28/05/2026",
+        "cliente": "LINQ TELECOMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 17782,
+        "produto": "SPLITTER 1/4 SC/UPC ",
+        "qtd": 100.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "28/05/2026",
+        "cliente": "LINQ TELECOMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 13727,
+        "produto": "SPLITTER 1/4 SC/UPC ",
+        "qtd": 100.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "28/05/2026",
+        "cliente": "LINQ TELECOMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 18220,
+        "produto": "SPLITTER 1/2 50/50 (SHL) DESC 1MT ",
+        "qtd": 200.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "28/05/2026",
+        "cliente": "LINQ TELECOMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 173,
+        "produto": "SPLITTER 1/2 30/70 SC/UPC 0,9MM ",
+        "qtd": 13.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "28/05/2026",
+        "cliente": "LINQ TELECOMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 17671,
+        "produto": "SPLITTER 1/2 10/90 DESC 2UND",
+        "qtd": 43.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "28/05/2026",
+        "cliente": "LINQ TELECOMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 13232,
+        "produto": "SPLITTER 1/2 20/80 DESC 0,9MM 1,5MT",
+        "qtd": 100.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "28/05/2026",
+        "cliente": "LINQ TELECOMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 13315,
+        "produto": "SPLITTER 1/2 05/95 DESC  2UND ",
+        "qtd": 41.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      }
+    ],
+    "wms": [],
+    "mov": [
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "28/05/2026 00:00:00",
+        "cod_produto": 17784,
+        "produto": "SPLITTER 1/16 SC/UPC (/)",
+        "qtd": 200,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14374"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "28/05/2026 00:00:00",
+        "cod_produto": 18186,
+        "produto": "SPLITTER 1/16 (SHL) SC/APC ",
+        "qtd": 50,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14374"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "28/05/2026 00:00:00",
+        "cod_produto": 17783,
+        "produto": "SPLITTER 1/8  SC/UPC ",
+        "qtd": 100,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14374"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "28/05/2026 00:00:00",
+        "cod_produto": 18391,
+        "produto": "SPLITTER 1/8 SC/APC SHORT LEG BLISTER 2 UN.",
+        "qtd": 150,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14374"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "28/05/2026 00:00:00",
+        "cod_produto": 17782,
+        "produto": "SPLITTER 1/4 SC/UPC ",
+        "qtd": 100,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14374"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "28/05/2026 00:00:00",
+        "cod_produto": 13727,
+        "produto": "SPLITTER 1/4 SC/UPC ",
+        "qtd": 100,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14374"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "28/05/2026 00:00:00",
+        "cod_produto": 18220,
+        "produto": "SPLITTER 1/2 50/50 (SHL) DESC 1MT ",
+        "qtd": 200,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14374"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "28/05/2026 00:00:00",
+        "cod_produto": 173,
+        "produto": "SPLITTER 1/2 30/70 SC/UPC 0,9MM ",
+        "qtd": 13,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14374"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "28/05/2026 00:00:00",
+        "cod_produto": 17671,
+        "produto": "SPLITTER 1/2 10/90 DESC 2UND",
+        "qtd": 43,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14374"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "28/05/2026 00:00:00",
+        "cod_produto": 13232,
+        "produto": "SPLITTER 1/2 20/80 DESC 0,9MM 1,5MT",
+        "qtd": 100,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14374"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "28/05/2026 00:00:00",
+        "cod_produto": 13315,
+        "produto": "SPLITTER 1/2 05/95 DESC  2UND ",
+        "qtd": 41,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14374"
+      }
+    ]
+  },
+  "629207": {
+    "s7": [
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "18/06/2026",
+        "cliente": "LINQ TELECOMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 17782,
+        "produto": "SPLITTER 1/4 SC/UPC ",
+        "qtd": 80.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "18/06/2026",
+        "cliente": "LINQ TELECOMUNICACOES LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 13727,
+        "produto": "SPLITTER 1/4 SC/UPC ",
+        "qtd": 20.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      }
+    ],
+    "wms": [],
+    "mov": [
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "18/06/2026 00:00:00",
+        "cod_produto": 17782,
+        "produto": "SPLITTER 1/4 SC/UPC ",
+        "qtd": 80,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14471"
+      },
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "18/06/2026 00:00:00",
+        "cod_produto": 13727,
+        "produto": "SPLITTER 1/4 SC/UPC ",
+        "qtd": 20,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14471"
+      }
+    ]
+  },
+  "641704": {
+    "s7": [
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "14/09/2026",
+        "cliente": "NETFIBRA BR COMUNICACAO LTDA",
+        "vendedor": "GUILHERME SILVA",
+        "cod_produto": 18171,
+        "produto": "ONT ZTE F6201B AX3000",
+        "qtd": 500.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      }
+    ],
+    "wms": [],
+    "mov": [
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "14/09/2026 00:00:00",
+        "cod_produto": 18171,
+        "produto": "ONT ZTE F6201B AX3000",
+        "qtd": 500,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "95354"
+      }
+    ]
+  },
+  "615313": {
+    "s7": [
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 18186,
+        "produto": "SPLITTER 1/16 (SHL) SC/APC ",
+        "qtd": 160.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 163,
+        "produto": "ADAPTADOR (SC/APC) INT. (50 PCS)  ",
+        "qtd": 50.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 18327,
+        "produto": "ALCA  7,30 / 8,60MM (10UND) ACO 3V",
+        "qtd": 10.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 7204,
+        "produto": "ALCA  9,40 /10,10MM (10UND) VAO 80 - (CG3) 470 MM ACO 4V",
+        "qtd": 2.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 18336,
+        "produto": "BAP2 C/ PARAFUSO",
+        "qtd": 1200.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 18337,
+        "produto": "BAP3 C/ PARAFUSO",
+        "qtd": 300.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 4940,
+        "produto": "BATERIA ESTACIONARIA MOURA 12MN4100 ( 220AH) (/)",
+        "qtd": 4.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 13772,
+        "produto": "CABO OPTICO AS80 48FO 2KM - WEC",
+        "qtd": 1.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 14111,
+        "produto": "CABO OPTICO ASU80 12FO 3KM - WEC",
+        "qtd": 16.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 17127,
+        "produto": "CAIXA EMENDA 24-96FO SVT 1 BANDEJA (2FLEX) NEW",
+        "qtd": 25.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 17176,
+        "produto": "CARRINHO BOBINA DROP GFIBER LARANJA (/)",
+        "qtd": 2.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 165,
+        "produto": "CONECTOR RAPIDO (NAZDA) SC/APC (Q1) ROSCA (10UN)",
+        "qtd": 100.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 8291,
+        "produto": "CORDAO OPTICO SIMPLEX SC/UPC SC/APC 2,5 M",
+        "qtd": 50.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 17467,
+        "produto": "D.I.O 72FO SC/APC (PREXX)",
+        "qtd": 1.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 13247,
+        "produto": "DROP 1FO 2KM  COLADO - WEC",
+        "qtd": 20.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 6080,
+        "produto": "ESCADA EXT. FIBRA (SINTESE) 3,60 X 6,00 MTS ",
+        "qtd": 4.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 3606,
+        "produto": "FECHO DENTADO 3/4 (20 UND)",
+        "qtd": 15.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 17676,
+        "produto": "FITA LIBAN (SUNTECH) 3/4 ACO 25MTS",
+        "qtd": 20.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 12770,
+        "produto": "MAQUINA DE CINTAR POSTE (FUSIMEC) C CATRACA",
+        "qtd": 2.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 4974,
+        "produto": "OLHAL C/ ROSCA M12",
+        "qtd": 180.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 15583,
+        "produto": "OLT HUAWEI MA5800 X 7 6U 19 POL 10G S/BOARD 2PILA  2MPLB DC",
+        "qtd": 1.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 17666,
+        "produto": "OLT PLACA GPON (HUAWEI) GPSF 16PON CCC (MA5800)",
+        "qtd": 1.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 17833,
+        "produto": "ONT AX3000  ZTE ZXHN F6600P MULTI",
+        "qtd": 100.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 18238,
+        "produto": "PARAFUSO CABECA ABAULADA 12X35MM",
+        "qtd": 180.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 119,
+        "produto": "ROUTER BOARD (MIKROTIK) CLOUD CORE CCR1036 8G 2S/ EM L6 (/)",
+        "qtd": 1.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 18276,
+        "produto": "SPLITTER  (2FLEX) 1/4 SC/APC ",
+        "qtd": 40.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 17194,
+        "produto": "SUP. UNIVERSAL PASSAGEM E ANCORAGEM REFORCADO - SUPA (SUCO)",
+        "qtd": 1500.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 4975,
+        "produto": "SUPORTE PARA BAP 50MM GALV.",
+        "qtd": 180.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt_pedido": "16/03/2026",
+        "cliente": "ELENI B. DA SILVA E CIA LTDA",
+        "vendedor": "JOSILENE ",
+        "cod_produto": 13050,
+        "produto": "CTO 1X16 VAZIA PRETA 2TRAVA (GFIBER) ",
+        "qtd": 156.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      }
+    ],
+    "wms": [],
+    "mov": [
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 18186,
+        "produto": "SPLITTER 1/16 (SHL) SC/APC ",
+        "qtd": 160,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 163,
+        "produto": "ADAPTADOR (SC/APC) INT. (50 PCS)  ",
+        "qtd": 50,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 18327,
+        "produto": "ALCA  7,30 / 8,60MM (10UND) ACO 3V",
+        "qtd": 10,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 7204,
+        "produto": "ALCA  9,40 /10,10MM (10UND) VAO 80 - (CG3) 470 MM ACO 4V",
+        "qtd": 2,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 18336,
+        "produto": "BAP2 C/ PARAFUSO",
+        "qtd": 1200,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 18337,
+        "produto": "BAP3 C/ PARAFUSO",
+        "qtd": 300,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 4940,
+        "produto": "BATERIA ESTACIONARIA MOURA 12MN4100 ( 220AH) (/)",
+        "qtd": 4,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 13772,
+        "produto": "CABO OPTICO AS80 48FO 2KM - WEC",
+        "qtd": 1,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 14111,
+        "produto": "CABO OPTICO ASU80 12FO 3KM - WEC",
+        "qtd": 16,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 17127,
+        "produto": "CAIXA EMENDA 24-96FO SVT 1 BANDEJA (2FLEX) NEW",
+        "qtd": 25,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 17176,
+        "produto": "CARRINHO BOBINA DROP GFIBER LARANJA (/)",
+        "qtd": 2,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 165,
+        "produto": "CONECTOR RAPIDO (NAZDA) SC/APC (Q1) ROSCA (10UN)",
+        "qtd": 100,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 8291,
+        "produto": "CORDAO OPTICO SIMPLEX SC/UPC SC/APC 2,5 M",
+        "qtd": 50,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 17467,
+        "produto": "D.I.O 72FO SC/APC (PREXX)",
+        "qtd": 1,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 13247,
+        "produto": "DROP 1FO 2KM  COLADO - WEC",
+        "qtd": 20,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 6080,
+        "produto": "ESCADA EXT. FIBRA (SINTESE) 3,60 X 6,00 MTS ",
+        "qtd": 4,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 3606,
+        "produto": "FECHO DENTADO 3/4 (20 UND)",
+        "qtd": 15,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 17676,
+        "produto": "FITA LIBAN (SUNTECH) 3/4 ACO 25MTS",
+        "qtd": 20,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 12770,
+        "produto": "MAQUINA DE CINTAR POSTE (FUSIMEC) C CATRACA",
+        "qtd": 2,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 4974,
+        "produto": "OLHAL C/ ROSCA M12",
+        "qtd": 180,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 15583,
+        "produto": "OLT HUAWEI MA5800 X 7 6U 19 POL 10G S/BOARD 2PILA  2MPLB DC",
+        "qtd": 1,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 17666,
+        "produto": "OLT PLACA GPON (HUAWEI) GPSF 16PON CCC (MA5800)",
+        "qtd": 1,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 17833,
+        "produto": "ONT AX3000  ZTE ZXHN F6600P MULTI",
+        "qtd": 100,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 18238,
+        "produto": "PARAFUSO CABECA ABAULADA 12X35MM",
+        "qtd": 180,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 119,
+        "produto": "ROUTER BOARD (MIKROTIK) CLOUD CORE CCR1036 8G 2S/ EM L6 (/)",
+        "qtd": 1,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 18276,
+        "produto": "SPLITTER  (2FLEX) 1/4 SC/APC ",
+        "qtd": 40,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 17194,
+        "produto": "SUP. UNIVERSAL PASSAGEM E ANCORAGEM REFORCADO - SUPA (SUCO)",
+        "qtd": 1500,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 4975,
+        "produto": "SUPORTE PARA BAP 50MM GALV.",
+        "qtd": 180,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      },
+      {
+        "cod_emp": 1,
+        "empresa": "GW WIRELLES",
+        "dt": "16/03/2026 00:00:00",
+        "cod_produto": 13050,
+        "produto": "CTO 1X16 VAZIA PRETA 2TRAVA (GFIBER) ",
+        "qtd": 156,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "92714"
+      }
+    ]
+  },
+  "642089": {
+    "s7": [
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "16/09/2026",
+        "cliente": "INFINITY GO TELECOMUNICACOES LTDA",
+        "vendedor": "BEATRIZ JESUS",
+        "cod_produto": 18005,
+        "produto": "ROTEADOR AX3000  EX520 TP LINK",
+        "qtd": 150.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      }
+    ],
+    "wms": [],
+    "mov": [
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "16/09/2026 00:00:00",
+        "cod_produto": 18005,
+        "produto": "ROTEADOR AX3000  EX520 TP LINK",
+        "qtd": 150,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14900"
+      }
+    ]
+  },
+  "631048": {
+    "s7": [
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt_pedido": "01/07/2026",
+        "cliente": "INFINITY GO TELECOMUNICACOES LTDA",
+        "vendedor": "BEATRIZ JESUS",
+        "cod_produto": 17716,
+        "produto": "ONU V-SOL 2801SG PRETA",
+        "qtd": 300.0,
+        "unidade": "UN",
+        "operacao": "SAIDA_BALCAO"
+      }
+    ],
+    "wms": [],
+    "mov": [
+      {
+        "cod_emp": 8,
+        "empresa": "FIBER TELECOM",
+        "dt": "01/07/2026 00:00:00",
+        "cod_produto": 17716,
+        "produto": "ONU V-SOL 2801SG PRETA",
+        "qtd": 300,
+        "operacao": "SAIDA_BALCAO",
+        "nf": "14533"
+      }
+    ]
+  }
+}
