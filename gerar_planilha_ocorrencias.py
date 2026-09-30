@@ -2,7 +2,7 @@ import os
 import pymssql
 from dotenv import load_dotenv
 import openpyxl
-from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
+from openpyxl.styles import Font, PatternFill, Alignment, Border, Side, Protection
 from openpyxl.utils import get_column_letter
 
 load_dotenv('c:/Users/renan.alves/.gemini/Projetos/Bancos/.env')
@@ -56,7 +56,7 @@ ws_oc.views.sheetView[0].showGridLines = True
 ws_db = wb.create_sheet(title="Base de Dados")
 ws_db.views.sheetView[0].showGridLines = True
 
-# Paleta Visual
+# Paleta Visual Corporativa GW & Fiber
 DARK_NAVY = "1B365D"
 TITLE_NAVY = "0F2537"
 HEADER_FILL = PatternFill(start_color=DARK_NAVY, end_color=DARK_NAVY, fill_type="solid")
@@ -64,7 +64,8 @@ TITLE_FILL = PatternFill(start_color=TITLE_NAVY, end_color=TITLE_NAVY, fill_type
 SUBTITLE_FILL = PatternFill(start_color="F1F5F9", end_color="F1F5F9", fill_type="solid")
 ZEBRA_FILL = PatternFill(start_color="F8FAFC", end_color="F8FAFC", fill_type="solid")
 WHITE_FILL = PatternFill(start_color="FFFFFF", end_color="FFFFFF", fill_type="solid")
-INPUT_FILL = PatternFill(start_color="FFFBEB", end_color="FFFBEB", fill_type="solid") # Tom amarelo claro para indicar campo editável
+INPUT_FILL = PatternFill(start_color="FFFBEB", end_color="FFFBEB", fill_type="solid") # Amarelo/âmbar suave para campos editáveis
+AUTO_FILL = PatternFill(start_color="F1F5F9", end_color="F1F5F9", fill_type="solid")  # Cinza suave para campos bloqueados
 
 # Cores de Status
 STATUS_COLORS = {
@@ -102,6 +103,7 @@ for col_idx in range(1, len(db_headers) + 1):
     cell.font = header_font
     cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
     cell.border = HEADER_BORDER
+    cell.protection = Protection(locked=True)
 ws_db.row_dimensions[1].height = 28
 
 for r_idx, r in enumerate(rows_db, start=2):
@@ -151,6 +153,10 @@ ws_db.column_dimensions['F'].width = 38
 ws_db.column_dimensions['G'].width = 22
 ws_db.column_dimensions['J'].width = 42
 
+# Bloquear e proteger a aba Base de Dados contra qualquer alteração acidental
+ws_db.protection.sheet = True
+ws_db.protection.enable()
+
 # ----------------------------------------------------
 # 4. Preencher Aba "Gestão de Ocorrências"
 # ----------------------------------------------------
@@ -163,18 +169,22 @@ title_cell.value = "GW WIRELLES & FIBER TELECOM — PAINEL DE GESTÃO DE OCORRÊ
 title_cell.font = Font(name="Segoe UI", size=13, bold=True, color="FFFFFF")
 title_cell.fill = TITLE_FILL
 title_cell.alignment = Alignment(horizontal="center", vertical="center")
+title_cell.protection = Protection(locked=True)
 ws_oc.row_dimensions[1].height = 36
 
-# Banner de Instruções
+# Banner de Instruções com destaque para proteção de células
 ws_oc.merge_cells('A2:L2')
 sub_cell = ws_oc['A2']
-sub_cell.value = "💡 COMO USAR: Ao digitar o Nº do Pedido (Coluna A), o Excel busca automaticamente Empresa, Cliente, Vendedor, Data, Material e Total na Base de Dados. Se o pedido tiver mais de um item, digite o Cód. Material na Coluna F para selecionar o produto desejado. Digite a Qtd Entregue para calcular o Saldo Pendente."
-sub_cell.font = Font(name="Segoe UI", size=9, italic=True, color="1E293B")
+sub_cell.value = "🔒 PROTEÇÃO ATIVA: Digitação permitida APENAS nos campos editáveis (Nº Pedido, Cód. Material, Qtd Entregue e Observação). As demais colunas são preenchidas automaticamente pela Base de Dados e estão bloqueadas para evitar erros de fórmulas."
+sub_cell.font = Font(name="Segoe UI", size=9, bold=True, color="1E293B")
 sub_cell.fill = SUBTITLE_FILL
 sub_cell.alignment = Alignment(horizontal="left", vertical="center", indent=1)
+sub_cell.protection = Protection(locked=True)
 ws_oc.row_dimensions[2].height = 26
 
 ws_oc.row_dimensions[3].height = 10 # Espaçador
+for c in range(1, 13):
+    ws_oc.cell(row=3, column=c).protection = Protection(locked=True)
 
 # Cabeçalhos da Tabela
 oc_headers = [
@@ -199,6 +209,7 @@ for col_idx, (h_name, width) in enumerate(oc_headers, start=1):
     cell.font = Font(name="Segoe UI", size=10, bold=True, color="FFFFFF")
     cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
     cell.border = HEADER_BORDER
+    cell.protection = Protection(locked=True)
     col_letter = get_column_letter(col_idx)
     ws_oc.column_dimensions[col_letter].width = width
 
@@ -240,24 +251,40 @@ def apply_row_style(ws, r_num, is_zebra, status_type=None):
         c.border = THIN_BORDER
         c.font = Font(name="Segoe UI", size=9.5)
         
-        # Alinhamentos específicos
-        if col_i in (1, 6): # Pedido, Material
+        # DEFINIÇÃO DE BLOQUEIO DE CÉLULAS:
+        # Colunas com digitação permitida:
+        # 1: Nº do Pedido
+        # 6: Código do Material
+        # 9: Qtd Entregue
+        # 11: Tipo de Ocorrência (liberado para seleção/digitação)
+        # 12: Observação da Ocorrência
+        # Demais colunas (2, 3, 4, 5, 7, 8, 10): BLOQUEADAS contra edição (locked=True)
+        if col_i in (1, 6, 9, 11, 12):
+            c.protection = Protection(locked=False)
+        else:
+            c.protection = Protection(locked=True)
+        
+        # Alinhamentos e Formatações
+        if col_i in (1, 6): # Pedido, Material (EDITÁVEL)
             c.alignment = Alignment(horizontal="center", vertical="center")
             c.number_format = "0"
-            c.fill = INPUT_FILL if col_i in (1, 6) else base_fill
-        elif col_i in (2, 5): # Empresa, Data
+            c.fill = INPUT_FILL
+        elif col_i in (2, 5): # Empresa, Data (BLOQUEADO)
             c.alignment = Alignment(horizontal="center", vertical="center")
             c.fill = base_fill
-        elif col_i in (3, 4, 7): # Cliente, Vendedor, Descricao
+        elif col_i in (3, 4, 7): # Cliente, Vendedor, Descricao (BLOQUEADO)
             c.alignment = Alignment(horizontal="left", vertical="center")
             c.fill = base_fill
-        elif col_i in (8, 9, 10): # Total, Entregue, Saldo
+        elif col_i in (8, 9, 10): # Total (BLOQ), Entregue (EDITÁVEL), Saldo (BLOQ)
             c.alignment = Alignment(horizontal="right", vertical="center")
             c.number_format = "#,##0.00"
-            c.fill = INPUT_FILL if col_i == 9 else base_fill
+            if col_i == 9:
+                c.fill = INPUT_FILL
+            else:
+                c.fill = base_fill
             if col_i == 10:
                 c.font = Font(name="Segoe UI", size=9.5, bold=True)
-        elif col_i == 11: # Tipo Ocorrência
+        elif col_i == 11: # Tipo Ocorrência (EDITÁVEL)
             c.alignment = Alignment(horizontal="center", vertical="center")
             if status_type and status_type in STATUS_COLORS:
                 cfg = STATUS_COLORS[status_type]
@@ -265,7 +292,7 @@ def apply_row_style(ws, r_num, is_zebra, status_type=None):
                 c.font = Font(name="Segoe UI", size=9.5, bold=True, color=cfg["font"])
             else:
                 c.fill = INPUT_FILL
-        elif col_i == 12: # Observação
+        elif col_i == 12: # Observação (EDITÁVEL)
             c.alignment = Alignment(horizontal="left", vertical="center")
             c.fill = INPUT_FILL
 
@@ -299,9 +326,9 @@ for ped, mat, entregue, tipo_oc, obs in user_occurrences:
     ws_oc.row_dimensions[r].height = 22
     current_row += 1
 
-# 2. Inserir 60 Linhas em Branco com Fórmulas Ativas para Novos Pedidos Digitados
-print(f"5. Adicionando 60 linhas configuradas com fórmulas automáticas a partir da linha {current_row}...")
-for r in range(current_row, current_row + 60):
+# 2. Inserir 100 Linhas em Branco com Fórmulas Ativas e Células Desbloqueadas para Digitação
+print(f"5. Adicionando 100 linhas configuradas com fórmulas automáticas e células protegidas a partir da linha {current_row}...")
+for r in range(current_row, current_row + 100):
     # Fórmulas inteligentes: se A{r} for vazio, tudo fica em branco ""
     # Se F{r} estiver vazio, F{r} puxa o primeiro SKU do pedido automaticamente
     f_mat_auto = f'=IF(A{r}="","",IFERROR(VLOOKUP(A{r},\'Base de Dados\'!$B:$M,8,FALSE),""))'
@@ -333,9 +360,14 @@ for r in range(current_row, current_row + 60):
 ws_oc.freeze_panes = 'A5'
 ws_db.freeze_panes = 'A2'
 
+# ATIVAR PROTEÇÃO DA PLANILHA DE OCORRÊNCIAS
+# Bloqueia qualquer célula com locked=True, permitindo digitação apenas nas células com locked=False
+ws_oc.protection.sheet = True
+ws_oc.protection.enable()
+
 # Garantir que a aba ativa seja "Gestão de Ocorrências"
 wb.active = ws_oc
 
-print(f"6. Salvando arquivo Excel em {excel_path}...")
+print(f"6. Salvando arquivo Excel com proteção em {excel_path}...")
 wb.save(excel_path)
-print("Sucesso! Planilha gerada com êxito.")
+print("Sucesso! Planilha gerada e protegida com êxito.")
