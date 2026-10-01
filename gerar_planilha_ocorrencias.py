@@ -360,14 +360,23 @@ for r in range(current_row, current_row + 100):
 ws_oc.freeze_panes = 'A5'
 ws_db.freeze_panes = 'A2'
 
+# Aplicar AutoFilter na linha 4 (cabeçalho) da aba Gestão de Ocorrências
+ws_oc.auto_filter.ref = f'A4:L{ws_oc.max_row}'
+
+# Aplicar AutoFilter na linha 1 da Base de Dados
+ws_db.auto_filter.ref = f'A1:M{ws_db.max_row}'
+
 # ATIVAR PROTEÇÃO DA PLANILHA DE OCORRÊNCIAS
 # Bloqueia qualquer célula com locked=True, permitindo digitação apenas nas células com locked=False
 ws_oc.protection.sheet = True
 ws_oc.protection.enable()
+# Permitir uso do AutoFilter e Ordenação mesmo com a planilha protegida
+ws_oc.protection.autoFilter = False
+ws_oc.protection.sort = False
 
 # Garantir que a aba ativa seja "Gestão de Ocorrências"
 wb.active = ws_oc
 
-print(f"6. Salvando arquivo Excel com proteção em {excel_path}...")
+print(f"6. Salvando arquivo Excel com filtro e proteção em {excel_path}...")
 wb.save(excel_path)
-print("Sucesso! Planilha gerada e protegida com êxito.")
+print("Sucesso! Planilha gerada, com filtro aplicado na linha 4 e protegida com êxito.")
